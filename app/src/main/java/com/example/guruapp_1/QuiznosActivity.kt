@@ -10,7 +10,7 @@ import android.widget.Toast
 import com.example.guruapp_1.R.drawable
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class QuiznosActivity : AppCompatActivity() {
 //         listView.onItemClickListener = AdapterView.OnItemClickListener{parent, view, position, id ->
 //            val selectItem = parent.getItemAtPosition(position)
 //            Toast.makeText(this, selectItem.toString(), Toast.LENGTH_SHORT).show()
