@@ -1,1 +1,1 @@
-# Guru2_Android
+# Stores
