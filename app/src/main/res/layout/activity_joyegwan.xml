@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".JoyegwanActivity">
+
+    <TextView
+        android:id="@+id/joye_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="조형예술관"
+        android:textColor="#0000FF"
+        android:textSize="34sp"></TextView>
+
+    <TextView
+        android:id="@+id/joye_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="B1F"
+        android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/joye_button1"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/button_background3"
+            android:text="그림나라\n화방"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".NurigwanActivity">
+
+    <TextView
+        android:id="@+id/nuri_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="학생누리관"
+        android:textColor="#0000FF"
+        android:textSize="34sp"></TextView>
+
+    <TextView
+        android:id="@+id/nuri_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="-11dp"
+        android:gravity="center"
+        android:text="1F"
+        android:textSize="24sp"></TextView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/nuri_button1"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background3"
+            android:text="비틀\n쥬스" />
+
+        <Button
+            android:id="@+id/nuri_button2"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background3"
+            android:text="퀴즈\n노스" />
+
+        <Button
+            android:id="@+id/nuri_button3"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background3"
+            android:text="가은" />
+
+        <Button
+            android:id="@+id/nuri_button4"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_background3"
+            android:text="츄밥" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/nuri_button5"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="-11dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background3"
+            android:text="우리\n은행" />
+
+        <Button
+            android:id="@+id/nuri_button6"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="-11dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_background3"
+            android:text="누리\n스토어" />
+
+        <Button
+            android:id="@+id/nuri_button7"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background3"
+            android:text="안경점" />
+
+        <Button
+            android:id="@+id/nuri_button8"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background3"
+            android:text="SWEET U"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="-1dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/nuri_button9"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/button_background3"
+            android:text="우체국" />
+    </LinearLayout>
+
+    <TextView
+    android:id="@+id/nuri_text3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="19dp"
+    android:layout_marginBottom="10dp"
+    android:gravity="center"
+    android:text="B1F"
+    android:textSize="24sp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/nuri_button10"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="-11dp"
+            android:layout_marginBottom="20dp"
+            android:enabled="false"
+            android:clickable="false"
+            android:background="@drawable/button_background4"
+            android:text="월남\n선생" />
+
+        <Button
+            android:id="@+id/nuri_button11"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginBottom="10dp"
+            android:enabled="false"
+            android:clickable="false"
+            android:background="@drawable/button_background4"
+            android:text="아딸" />
+
+        <Button
+            android:id="@+id/nuri_button12"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="-10.5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background3"
+            android:text="만권\n화밥"/>
+
+        <Button
+            android:id="@+id/nuri_button13"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="-11dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background3"
+            android:text="최고당\n돈가스" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="339dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/nuri_button14"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/button_background3"
+            android:text="에땅" />
+    </LinearLayout>
+
+</LinearLayout>

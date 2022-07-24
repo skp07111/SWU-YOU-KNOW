@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/select1_bookstore"
+        android:title="혼잡" />
+    <item
+        android:id="@+id/select2_bookstore"
+        android:title="보통" />
+    <item
+        android:id="@+id/select3_bookstore"
+        android:title="여유" />
+</menu>

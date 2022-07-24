@@ -14,6 +14,24 @@
         android:theme="@style/Theme.GuruApp_1"
         tools:targetApi="31">
         <activity
+            android:name=".ShalomActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsagwanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AuditoriumActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LibraryCafeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".JoyegwanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Anniversary50thActivity"
+            android:exported="false" />
+        <activity
             android:name=".NurigwanActivity"
             android:exported="true">
             <intent-filter>

@@ -10,7 +10,16 @@
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/drawable/button_background3.xml" value="0.358" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/drawable/button_background4.xml" value="0.358" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2805" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_anniversary50th.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_auditorium.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_fiftieth_anniversary.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_insagwan.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_joyegwan.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_library.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_librarycafe.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_nurigwan.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_shalom.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/category_list.xml" value="0.33" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/child_item.xml" value="0.1" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/custom_list.xml" value="0.3026041666666667" />
@@ -20,16 +29,29 @@
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/nurigwan.xml" value="0.5" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu.xml" value="0.5" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_beetlejuice.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_bookstore.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_choigodang.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_chubob.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_copyworks.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_cu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_dorm.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_etang.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_gaeun.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_gamtan.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_gs.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_hwabang.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_libcafe.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_mangwon.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_nuristore.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_onigiri.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_optician.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_pandorothy.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_postoffice.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_quiznos.xml" value="0.8809523809523809" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_seven.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_staff.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_sweetu.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_touslesjours.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_wooribank.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.21" />
       </map>
