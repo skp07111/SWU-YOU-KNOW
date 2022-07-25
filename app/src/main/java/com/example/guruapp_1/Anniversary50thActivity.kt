@@ -71,8 +71,8 @@ class Anniversary50thActivity : AppCompatActivity() {
             R.id.select1_cu -> fifty_button5.setBackgroundResource(R.drawable.button_background1)
             R.id.select2_cu -> fifty_button5.setBackgroundResource(R.drawable.button_background2)
             R.id.select3_cu -> fifty_button5.setBackgroundResource(R.drawable.button_background3)
-            R.id.select3_copyworks -> fifty_button6.setBackgroundResource(R.drawable.button_background1)
-            R.id.select3_copyworks -> fifty_button6.setBackgroundResource(R.drawable.button_background2)
+            R.id.select1_copyworks -> fifty_button6.setBackgroundResource(R.drawable.button_background1)
+            R.id.select2_copyworks -> fifty_button6.setBackgroundResource(R.drawable.button_background2)
             R.id.select3_copyworks -> fifty_button6.setBackgroundResource(R.drawable.button_background3)
 
         }
