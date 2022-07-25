@@ -24,11 +24,11 @@ class AuditoriumActivity : AppCompatActivity() {
 
         when (v?.id) {
             R.id.aud_button1 -> {
-                menu?.setHeaderTitle("교직원식당 혼잡도")
+                menu?.setHeaderTitle("교내서점 혼잡도")
                 menuInflater.inflate(R.menu.popup_menu_bookstore, menu)
             }
             R.id.aud_button2 -> {
-                menu?.setHeaderTitle("뚜레쥬르 혼잡도")
+                menu?.setHeaderTitle("팬도로시 혼잡도")
                 menuInflater.inflate(R.menu.popup_menu_pandorothy, menu)
             }
         }
