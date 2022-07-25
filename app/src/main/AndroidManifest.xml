@@ -31,6 +31,10 @@
         <activity
             android:name=".Anniversary50thActivity"
             android:exported="false" />
+
+        <activity android:name=".MainMenuActivity1"
+            android:exported="false" />
+
         <activity
             android:name=".NurigwanActivity"
             android:exported="true">
