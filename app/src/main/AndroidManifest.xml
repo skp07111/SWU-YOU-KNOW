@@ -39,6 +39,14 @@
             android:exported="false"
             android:parentActivityName=".MainActivity" />
         <activity
+            android:name=".Map2Activity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".KidokActivity"
+            android:exported="false"
+            android:parentActivityName=".Map2Activity" />
+        <activity
             android:name=".ShalomActivity"
             android:exported="false"
             android:parentActivityName=".MapActivity" />
@@ -46,6 +54,10 @@
             android:name=".InsagwanActivity"
             android:exported="false"
             android:parentActivityName=".MapActivity" />
+        <activity
+            android:name=".Insagwan2Activity"
+            android:exported="false"
+            android:parentActivityName=".Map2Activity" />
         <activity
             android:name=".AuditoriumActivity"
             android:exported="false"
@@ -55,17 +67,41 @@
             android:exported="false"
             android:parentActivityName=".MapActivity" />
         <activity
+            android:name=".LibraryActivity"
+            android:exported="false"
+            android:parentActivityName=".Map2Activity" />
+        <activity
             android:name=".JoyegwanActivity"
             android:exported="false"
             android:parentActivityName=".MapActivity" />
+        <activity
+            android:name=".Joyegwan2Activity"
+            android:exported="false"
+            android:parentActivityName=".Map2Activity" />
         <activity
             android:name=".Anniversary50thActivity"
             android:exported="false"
             android:parentActivityName=".MapActivity" />
         <activity
+            android:name=".Anniversary50th2Activity"
+            android:exported="false"
+            android:parentActivityName=".Map2Activity" />
+        <activity
             android:name=".NurigwanActivity"
             android:exported="false"
             android:parentActivityName=".MapActivity" />
+        <activity
+            android:name=".Nurigwan2Activity"
+            android:exported="false"
+            android:parentActivityName=".Map2Activity" />
+        <activity
+            android:name=".Science1Activity"
+            android:exported="false"
+            android:parentActivityName=".Map2Activity" />
+        <activity
+            android:name=".Science2Activity"
+            android:exported="false"
+            android:parentActivityName=".Map2Activity" />
     </application>
 
 </manifest>

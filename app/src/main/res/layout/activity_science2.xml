@@ -5,49 +5,47 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".AuditoriumActivity">
+    tools:context=".InsagwanActivity">
 
     <TextView
-        android:id="@+id/aud_text1"
+        android:id="@+id/sci2_text1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="대강당"
+        android:text="제2과학관"
         android:textColor="#0000FF"
         android:textSize="34sp"></TextView>
 
     <TextView
-        android:id="@+id/aud_text2"
+        android:id="@+id/sci2_text2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="2F"
-        android:textSize="24sp"></TextView>
-
+        android:textSize="24sp" />
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="10dp">
+        android:layout_height="70dp"
+        android:layout_gravity="center">
 
         <Button
-            android:id="@+id/aud_button1"
+            android:id="@+id/sci2_button1"
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginBottom="20dp"
             android:background="@drawable/button_background3"
-            android:text="교내서점" />
+            android:text="2층\n로비" />
 
     </LinearLayout>
 
     <TextView
-        android:id="@+id/aud_text3"
+        android:id="@+id/sci2_text3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
         android:text="1F"
@@ -55,17 +53,40 @@
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="70dp"
         android:layout_gravity="center">
 
         <Button
-            android:id="@+id/aud_button2"
+            android:id="@+id/sci2_button2"
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginBottom="10dp"
             android:background="@drawable/button_background3"
-            android:text="팬도로시" />
+            android:text="1층\n로비" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sci2_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="B1F"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="70dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/sci2_button3"
+            android:layout_width="75dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="5dp"
+            android:background="@drawable/button_background3"
+            android:text="B1층\n로비" />
 
     </LinearLayout>
 
