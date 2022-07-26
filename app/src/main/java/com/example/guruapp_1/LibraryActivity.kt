@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_librarycafe.*
 class LibraryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_librarycafe)
+        setContentView(R.layout.activity_library)
         registerForContextMenu(libcafe_button1)
     }
 

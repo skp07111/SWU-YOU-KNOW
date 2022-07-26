@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_insagwan.*
 class Insagwan2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_insagwan)
+        setContentView(R.layout.activity_insagwan2)
         registerForContextMenu(insa_button1)
     }
 

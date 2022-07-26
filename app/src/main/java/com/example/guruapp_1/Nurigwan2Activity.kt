@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_nurigwan.*
 class Nurigwan2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_nurigwan)
+        setContentView(R.layout.activity_nurigwan2)
         registerForContextMenu(nuri_button1)
         registerForContextMenu(nuri_button2)
         registerForContextMenu(nuri_button3)

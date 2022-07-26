@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_joyegwan.*
 class Joyegwan2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_joyegwan)
+        setContentView(R.layout.activity_joyegwan2)
         registerForContextMenu(joye_button1)
     }
 

@@ -10,7 +10,7 @@ import kotlinx.android.synthetic.main.activity_anniversary50th.*
 class Anniversary50th2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_anniversary50th)
+        setContentView(R.layout.activity_anniversary50th2)
         registerForContextMenu(fifty_button1)
         registerForContextMenu(fifty_button2)
         registerForContextMenu(fifty_button3)
