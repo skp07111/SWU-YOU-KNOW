@@ -23,26 +23,37 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MapActivity"
+            android:parentActivityName=".MainActivity"
+            android:exported="false" />
+        <activity
             android:name=".ShalomActivity"
+            android:parentActivityName=".MapActivity"
             android:exported="false" />
         <activity
             android:name=".InsagwanActivity"
+            android:parentActivityName=".MapActivity"
             android:exported="false" />
         <activity
             android:name=".AuditoriumActivity"
+            android:parentActivityName=".MapActivity"
             android:exported="false" />
         <activity
             android:name=".LibraryCafeActivity"
+            android:parentActivityName=".MapActivity"
             android:exported="false" />
         <activity
             android:name=".JoyegwanActivity"
+            android:parentActivityName=".MapActivity"
             android:exported="false" />
         <activity
             android:name=".Anniversary50thActivity"
-            android:exported="true" />
+            android:parentActivityName=".MapActivity"
+            android:exported="false" />
         <activity
             android:name=".NurigwanActivity"
-            android:exported="true" />
+            android:parentActivityName=".MapActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
