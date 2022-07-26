@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/button_background4.xml" value="0.243" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/ic_launcher_background.xml" value="0.243" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_anniversary50th.xml" value="0.2526041666666667" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_map.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/green/AndroidStudioProjects/App/app/src/main/res/layout/activity_bus_main.xml" value="0.28125" />
         <entry key="..\:/Users/green/AndroidStudioProjects/App/app/src/main/res/layout/activity_bus_vacation.xml" value="0.28125" />
         <entry key="..\:/Users/green/AndroidStudioProjects/App/app/src/main/res/layout/activity_insagwan.xml" value="0.28125" />

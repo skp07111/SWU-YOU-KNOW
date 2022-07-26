@@ -19,4 +19,5 @@
     <color name="main_red_dark">#792222</color>
     <color name="main_red_medium">#C75b5C</color>
     <color name="main_red_bright">#FAA5A6</color>
+    <color name="main_red_highlight">#FFC6C6</color>
 </resources>

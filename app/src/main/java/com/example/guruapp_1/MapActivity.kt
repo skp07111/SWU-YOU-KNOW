@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_map.*
 
 class MapActivity : AppCompatActivity() {
+
     lateinit var anniMap: ImageButton
     lateinit var audMap: ImageButton
     lateinit var insaMap: ImageButton
@@ -15,9 +16,11 @@ class MapActivity : AppCompatActivity() {
     lateinit var libcafeMap: ImageButton
     lateinit var nuriMap: ImageButton
     lateinit var shalomMap: ImageButton
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_map)
+
         anniMap = findViewById<ImageButton>(R.id.imageButton50)
         audMap = findViewById<ImageButton>(R.id.imageButtonTgd)
         insaMap = findViewById<ImageButton>(R.id.imageButtonInsa)

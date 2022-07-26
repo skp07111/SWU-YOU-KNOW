@@ -69,6 +69,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
 
     private fun highlight1() { // ~ 9시 30분
 
+
         val table_column1: TableRow
         table_column1 = findViewById(R.id.table_column1)
 
@@ -80,7 +81,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column1.setBackgroundColor(Color.LTGRAY)
+                table_column1.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -108,7 +109,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column2.setBackgroundColor(Color.LTGRAY)
+                table_column2.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -134,7 +135,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column3.setBackgroundColor(Color.LTGRAY)
+                table_column3.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -160,7 +161,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column4.setBackgroundColor(Color.LTGRAY)
+                table_column4.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -188,7 +189,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column5.setBackgroundColor(Color.LTGRAY)
+                table_column5.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -214,7 +215,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column6.setBackgroundColor(Color.LTGRAY)
+                table_column6.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -240,7 +241,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column7.setBackgroundColor(Color.LTGRAY)
+                table_column7.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -266,7 +267,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column8.setBackgroundColor(Color.LTGRAY)
+                table_column8.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -292,7 +293,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column9.setBackgroundColor(Color.LTGRAY)
+                table_column9.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -318,7 +319,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column10.setBackgroundColor(Color.LTGRAY)
+                table_column10.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -346,7 +347,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column11.setBackgroundColor(Color.LTGRAY)
+                table_column11.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -372,7 +373,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column12.setBackgroundColor(Color.LTGRAY)
+                table_column12.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -398,7 +399,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column13.setBackgroundColor(Color.LTGRAY)
+                table_column13.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -424,7 +425,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column14.setBackgroundColor(Color.LTGRAY)
+                table_column14.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -452,7 +453,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column15.setBackgroundColor(Color.LTGRAY)
+                table_column15.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -478,7 +479,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column16.setBackgroundColor(Color.LTGRAY)
+                table_column16.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -504,7 +505,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column17.setBackgroundColor(Color.LTGRAY)
+                table_column17.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -532,7 +533,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column18.setBackgroundColor(Color.LTGRAY)
+                table_column18.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -558,7 +559,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column19.setBackgroundColor(Color.LTGRAY)
+                table_column19.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -584,7 +585,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column20.setBackgroundColor(Color.LTGRAY)
+                table_column20.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -610,7 +611,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column21.setBackgroundColor(Color.LTGRAY)
+                table_column21.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -638,7 +639,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column22.setBackgroundColor(Color.LTGRAY)
+                table_column22.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -664,7 +665,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column23.setBackgroundColor(Color.LTGRAY)
+                table_column23.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -690,7 +691,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column24.setBackgroundColor(Color.LTGRAY)
+                table_column24.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -716,7 +717,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column25.setBackgroundColor(Color.LTGRAY)
+                table_column25.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -744,7 +745,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column26.setBackgroundColor(Color.LTGRAY)
+                table_column26.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -770,7 +771,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column27.setBackgroundColor(Color.LTGRAY)
+                table_column27.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -796,7 +797,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column28.setBackgroundColor(Color.LTGRAY)
+                table_column28.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -822,7 +823,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column29.setBackgroundColor(Color.LTGRAY)
+                table_column29.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -850,7 +851,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column30.setBackgroundColor(Color.LTGRAY)
+                table_column30.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -876,7 +877,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column31.setBackgroundColor(Color.LTGRAY)
+                table_column31.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -902,7 +903,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column32.setBackgroundColor(Color.LTGRAY)
+                table_column32.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -928,7 +929,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column33.setBackgroundColor(Color.LTGRAY)
+                table_column33.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -954,7 +955,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column34.setBackgroundColor(Color.LTGRAY)
+                table_column34.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -982,7 +983,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column35.setBackgroundColor(Color.LTGRAY)
+                table_column35.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1010,7 +1011,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column36.setBackgroundColor(Color.LTGRAY)
+                table_column36.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1036,7 +1037,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column37.setBackgroundColor(Color.LTGRAY)
+                table_column37.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1062,7 +1063,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column38.setBackgroundColor(Color.LTGRAY)
+                table_column38.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1088,7 +1089,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column39.setBackgroundColor(Color.LTGRAY)
+                table_column39.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1114,7 +1115,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column40.setBackgroundColor(Color.LTGRAY)
+                table_column40.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1142,7 +1143,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column41.setBackgroundColor(Color.LTGRAY)
+                table_column41.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1168,7 +1169,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column42.setBackgroundColor(Color.LTGRAY)
+                table_column42.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1194,7 +1195,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column43.setBackgroundColor(Color.LTGRAY)
+                table_column43.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1220,7 +1221,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column44.setBackgroundColor(Color.LTGRAY)
+                table_column44.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1246,7 +1247,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column45.setBackgroundColor(Color.LTGRAY)
+                table_column45.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1274,7 +1275,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column46.setBackgroundColor(Color.LTGRAY)
+                table_column46.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1300,7 +1301,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column47.setBackgroundColor(Color.LTGRAY)
+                table_column47.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1326,7 +1327,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column48.setBackgroundColor(Color.LTGRAY)
+                table_column48.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
@@ -1352,7 +1353,7 @@ class ShuttleBusMainActivity : AppCompatActivity() {
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                table_column49.setBackgroundColor(Color.LTGRAY)
+                table_column49.setBackgroundColor(getColor(R.color.main_red_highlight))
             }
         }, busTime.time)
 
