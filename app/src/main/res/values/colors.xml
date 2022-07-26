@@ -7,4 +7,15 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    // congestion 혼잡도 빨강(1), 노랑(2), 초록(3) 각 혼잡, 보통, 여유
+    <color name="Congestion_red">#EA7C7D</color>
+    <color name="Congestion_yellow">#F8E392</color>
+    <color name="Congestion_green">#99CC99</color>
+
+    // 메인 색상 dark 어두움, medium 약간 밝음, bright 밝음
+    <color name="main_red">#AC3030</color>
+    <color name="main_red_dark">#792222</color>
+    <color name="main_red_medium">#C75b5C</color>
+    <color name="main_red_bright">#FAA5A6</color>
 </resources>

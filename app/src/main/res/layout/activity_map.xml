@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#799E58">
+
+    <ImageView
+        android:id="@+id/imageViewCampus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/minimap_campus" />
+
+    <ImageButton
+        android:id="@+id/imageButton50"
+        android:layout_width="141dp"
+        android:layout_height="129dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="52dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_50" />
+
+    <ImageButton
+        android:id="@+id/imageButtonKidok"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="126dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="175dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_kidok" />
+
+    <ImageButton
+        android:id="@+id/imageButtonInsa"
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="251dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="204dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_insa" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLibrary"
+        android:layout_width="wrap_content"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="194dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="306dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_library" />
+
+    <ImageButton
+        android:id="@+id/imageButtonNuri"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="254dp"
+        android:layout_marginEnd="63dp"
+        android:layout_marginBottom="344dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_nuri" />
+
+    <ImageButton
+        android:id="@+id/imageButtonJoye"
+        android:layout_width="wrap_content"
+        android:layout_height="81dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="330dp"
+        android:layout_marginEnd="-59dp"
+        android:layout_marginBottom="295dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_joye" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSci2"
+        android:layout_width="wrap_content"
+        android:layout_height="76dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="316dp"
+        android:layout_marginEnd="-45dp"
+        android:layout_marginBottom="376dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_science2" />
+
+    <ImageButton
+        android:id="@+id/imageButtonSci1"
+        android:layout_width="165dp"
+        android:layout_height="98dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="-13dp"
+        android:layout_marginBottom="443dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_science1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonShalom"
+        android:layout_width="165dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="131dp"
+        android:layout_marginBottom="479dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_shalom" />
+
+    <ImageButton
+        android:id="@+id/imageButtonItn"
+        android:layout_width="87dp"
+        android:layout_height="53dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="283dp"
+        android:layout_marginBottom="462dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_international" />
+
+    <ImageButton
+        android:id="@+id/imageButtonTgd"
+        android:layout_width="192dp"
+        android:layout_height="88dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="237dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="278dp"
+        android:layout_weight="1"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:srcCompat="@drawable/map_tgangdang" />
+
+</RelativeLayout>
