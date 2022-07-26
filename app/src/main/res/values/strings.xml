@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">SWU</string>
+
+    <string name="action_bus_home">학기 중 시간표</string>
+    <string name="school_column1">태릉입구->서울여대</string>
+    <string name="school_column2">서울여대->태릉입구</string>
+    <string name="school_v_column1">태릉입구역 출발</string>
+    <string name="school_v_column2">학교주차장 출발</string>
+    <string name="action_vacation">계절학기 시간표</string>
+    <string name="action_qua">문의사항</string>
 </resources>
