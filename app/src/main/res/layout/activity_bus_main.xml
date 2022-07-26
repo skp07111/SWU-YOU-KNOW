@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ShuttleBusMainActivity">>
+
+    <TableLayout
+
+        android:orientation="vertical"
+        android:id="@+id/main_content"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TableRow
+            android:orientation="horizontal"
+            android:background="@color/colorTable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/school_column1"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+            <TextView android:textSize="20sp" android:textStyle="bold" android:gravity="center" android:layout_width="wrap_content" android:layout_height="38dp" android:text="@string/school_column2" android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column1"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8:00~9:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="8:00~9:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column2"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9:40"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9:40"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column3"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9:50"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="9:50"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column4"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column5"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:10"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:10"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column6"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:20"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:20"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column7"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column8"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:40"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:40"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column9"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:50"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="10:50"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column10"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column11"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:15"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:15"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column12"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column13"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:45"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="11:45"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column14"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column15"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:20"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:20"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column16"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:40"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="12:40"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column17"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column18"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13:15"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13:15"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column19"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column20"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13:45"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="13:45"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column21"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column22"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14:15"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14:15"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column23"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column24"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14:45"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="14:45"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column25"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column26"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:15"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:15"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column27"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column28"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:45"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="15:45"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column29"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column30"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:15"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:15"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column31"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column32"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:40"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:40"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column33"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:50"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="16:50"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column34"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column35"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:10"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:10"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column36"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:20"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:20"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column37"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column38"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:40"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:40"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column39"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:50"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="17:50"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column40"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column41"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:10"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:10"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column42"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:20"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:20"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column43"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column44"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:45"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="18:45"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column45"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19:00"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column46"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19:15"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19:15"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column47"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19:30"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19:30"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column48"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="19:45"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+        <TableRow
+            android:orientation="horizontal"
+            android:id="@+id/table_column49"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="149dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="20:00"
+                android:textSize="18dp" />
+
+        </TableRow>
+
+        <View android:layout_height="1dp" android:background="@color/colorTable" />
+
+    </TableLayout>
+</ScrollView>

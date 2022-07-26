@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_marginEnd="1dp"
+            motion:layout_constraintVertical_bias="0.991"
+            android:layout_height="33dp"
+            motion:layout_constraintEnd_toStartOf="@+id/btnemail"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/imageView_call"
+            motion:layout_constraintHorizontal_bias="0.817"
+            android:layout_width="43dp"
+            android:id="@+id/imageView_email" />
+        <Constraint
+            android:layout_marginEnd="1dp"
+            motion:layout_constraintVertical_bias="0.528"
+            android:layout_height="33dp"
+            motion:layout_constraintEnd_toStartOf="@+id/btncall"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintHorizontal_bias="0.756"
+            android:layout_width="43dp"
+            android:id="@+id/imageView_call" />
+        <Constraint
+            android:layout_marginEnd="180dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="180dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toTopOf="@+id/imageView_call"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="185dp"
+            motion:layout_constraintVertical_bias="0.983"
+            android:id="@+id/btnemail" />
+        <Constraint
+            android:layout_marginEnd="188dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="188dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            motion:layout_constraintVertical_bias="0.528"
+            android:id="@+id/btncall" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+    </ConstraintSet>
+</MotionScene>
