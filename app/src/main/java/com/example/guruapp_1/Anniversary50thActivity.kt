@@ -54,6 +54,10 @@ class Anniversary50thActivity : AppCompatActivity() {
         }
     }
 
+    private fun saveData(){
+        var pref = this.getPreferences(0)
+    }
+
     override fun onContextItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
             R.id.select1_staff -> fifty_button1.setBackgroundResource(R.drawable.button_background1)
