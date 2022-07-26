@@ -1,11 +1,9 @@
 package com.example.guruapp_1
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
-import kotlinx.android.synthetic.main.activity_map.*
 
 class MapActivity : AppCompatActivity() {
 
