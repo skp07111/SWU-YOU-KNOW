@@ -25,7 +25,7 @@ class Science1Activity : AppCompatActivity() {
         when (v?.id) {
             R.id.sci1_button1 -> {
                 menu?.setHeaderTitle("1층 로비 혼잡도")
-                menuInflater.inflate(R.menu.popup_menu_staff, menu)
+                menuInflater.inflate(R.menu.popup_menu_sci1_1, menu)
             }
         }
     }
@@ -36,9 +36,9 @@ class Science1Activity : AppCompatActivity() {
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
-            R.id.select1_staff -> fifty_button1.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_staff -> fifty_button1.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_staff -> fifty_button1.setBackgroundResource(R.drawable.button_background3)
+            R.id.select1_sci1_1 -> sci1_button1.setBackgroundResource(R.drawable.button_background1)
+            R.id.select2_sci1_1 -> sci1_button1.setBackgroundResource(R.drawable.button_background2)
+            R.id.select3_sci1_1 -> sci1_button1.setBackgroundResource(R.drawable.button_background3)
         }
         return super.onContextItemSelected(item)
     }
