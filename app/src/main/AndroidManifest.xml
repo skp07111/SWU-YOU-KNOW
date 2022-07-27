@@ -44,9 +44,6 @@
             android:name=".QuiznosActivity"
             android:exported="false" />
         <activity
-            android:name=".Quiznos_Menu"
-            android:exported="false" />
-        <activity
             android:name=".VacationActivity"
             android:exported="false"
             android:parentActivityName=".ShuttleBusMainActivity" />
