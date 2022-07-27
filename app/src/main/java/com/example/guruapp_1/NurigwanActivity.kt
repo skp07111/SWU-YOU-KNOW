@@ -1,13 +1,23 @@
 package com.example.guruapp_1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_nurigwan.*
 
 class NurigwanActivity : AppCompatActivity() {
+
+    lateinit var quiznosMenu: Button
+    lateinit var gaeunMenu: Button
+    lateinit var choobapMenu: Button
+    lateinit var mangwonMenu: Button
+    lateinit var chegodangMenu: Button
+    lateinit var etangMenu: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nurigwan)
@@ -23,6 +33,38 @@ class NurigwanActivity : AppCompatActivity() {
         registerForContextMenu(nuri_button12)
         registerForContextMenu(nuri_button13)
         registerForContextMenu(nuri_button14)
+
+        quiznosMenu = findViewById<Button>(R.id.nuri_button2)
+        gaeunMenu = findViewById<Button>(R.id.nuri_button3)
+        choobapMenu = findViewById<Button>(R.id.nuri_button4)
+        mangwonMenu = findViewById<Button>(R.id.nuri_button12)
+        chegodangMenu = findViewById<Button>(R.id.nuri_button13)
+        etangMenu = findViewById<Button>(R.id.nuri_button14)
+
+        quiznosMenu.setOnClickListener() {
+            var intent = Intent(this, QuiznosActivity::class.java)
+            startActivity(intent)
+        }
+        gaeunMenu.setOnClickListener() {
+            var intent = Intent(this, GaeunActivity::class.java)
+            startActivity(intent)
+        }
+        choobapMenu.setOnClickListener() {
+            var intent = Intent(this, ChoobapActivity::class.java)
+            startActivity(intent)
+        }
+        mangwonMenu.setOnClickListener() {
+            var intent = Intent(this, MangwonActivity::class.java)
+            startActivity(intent)
+        }
+        chegodangMenu.setOnClickListener() {
+            var intent = Intent(this, ChegodangActivity::class.java)
+            startActivity(intent)
+        }
+        etangMenu.setOnClickListener() {
+            var intent = Intent(this, EtangActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateContextMenu(

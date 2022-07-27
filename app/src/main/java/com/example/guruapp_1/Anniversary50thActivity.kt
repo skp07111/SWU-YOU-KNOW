@@ -1,13 +1,19 @@
 package com.example.guruapp_1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_anniversary50th.*
 
 class Anniversary50thActivity : AppCompatActivity() {
+
+    lateinit var onigiriMenu: Button
+    lateinit var gamtanMenu: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anniversary50th)
@@ -17,6 +23,18 @@ class Anniversary50thActivity : AppCompatActivity() {
         registerForContextMenu(fifty_button4)
         registerForContextMenu(fifty_button5)
         registerForContextMenu(fifty_button6)
+
+        onigiriMenu = findViewById<Button>(R.id.fifty_button3)
+        gamtanMenu = findViewById<Button>(R.id.fifty_button4)
+
+        onigiriMenu.setOnClickListener() {
+            var intent = Intent(this, OnigiriActivity::class.java)
+            startActivity(intent)
+        }
+        gamtanMenu.setOnClickListener() {
+            var intent = Intent(this, GamtanActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onCreateContextMenu(
