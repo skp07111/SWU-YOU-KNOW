@@ -17,12 +17,6 @@ class Anniversary50thActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anniversary50th)
-        registerForContextMenu(fifty_button1)
-        registerForContextMenu(fifty_button2)
-        registerForContextMenu(fifty_button3)
-        registerForContextMenu(fifty_button4)
-        registerForContextMenu(fifty_button5)
-        registerForContextMenu(fifty_button6)
 
         onigiriMenu = findViewById<Button>(R.id.fifty_button3)
         gamtanMenu = findViewById<Button>(R.id.fifty_button4)
@@ -35,6 +29,13 @@ class Anniversary50thActivity : AppCompatActivity() {
             var intent = Intent(this, GamtanActivity::class.java)
             startActivity(intent)
         }
+
+        registerForContextMenu(fifty_button1)
+        registerForContextMenu(fifty_button2)
+        registerForContextMenu(fifty_button3)
+        registerForContextMenu(fifty_button4)
+        registerForContextMenu(fifty_button5)
+        registerForContextMenu(fifty_button6)
     }
 
     override fun onCreateContextMenu(
@@ -70,10 +71,6 @@ class Anniversary50thActivity : AppCompatActivity() {
                 menuInflater.inflate(R.menu.popup_menu_copyworks, menu)
             }
         }
-    }
-
-    private fun saveData(){
-        var pref = this.getPreferences(0)
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {

@@ -21,25 +21,13 @@ class NurigwanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nurigwan)
-        registerForContextMenu(nuri_button1)
-        registerForContextMenu(nuri_button2)
-        registerForContextMenu(nuri_button3)
-        registerForContextMenu(nuri_button4)
-        registerForContextMenu(nuri_button5)
-        registerForContextMenu(nuri_button6)
-        registerForContextMenu(nuri_button7)
-        registerForContextMenu(nuri_button8)
-        registerForContextMenu(nuri_button9)
-        registerForContextMenu(nuri_button12)
-        registerForContextMenu(nuri_button13)
-        registerForContextMenu(nuri_button14)
 
-        quiznosMenu = findViewById<Button>(R.id.nuri_button2)
-        gaeunMenu = findViewById<Button>(R.id.nuri_button3)
-        choobapMenu = findViewById<Button>(R.id.nuri_button4)
-        mangwonMenu = findViewById<Button>(R.id.nuri_button12)
-        chegodangMenu = findViewById<Button>(R.id.nuri_button13)
-        etangMenu = findViewById<Button>(R.id.nuri_button14)
+        var quiznosMenu = findViewById<Button>(R.id.nuri_button2)
+        var gaeunMenu = findViewById<Button>(R.id.nuri_button3)
+        var choobapMenu = findViewById<Button>(R.id.nuri_button4)
+        var mangwonMenu = findViewById<Button>(R.id.nuri_button12)
+        var chegodangMenu = findViewById<Button>(R.id.nuri_button13)
+        var etangMenu = findViewById<Button>(R.id.nuri_button14)
 
         quiznosMenu.setOnClickListener() {
             var intent = Intent(this, QuiznosActivity::class.java)
@@ -65,6 +53,19 @@ class NurigwanActivity : AppCompatActivity() {
             var intent = Intent(this, EtangActivity::class.java)
             startActivity(intent)
         }
+
+        registerForContextMenu(nuri_button1)
+        registerForContextMenu(nuri_button2)
+        registerForContextMenu(nuri_button3)
+        registerForContextMenu(nuri_button4)
+        registerForContextMenu(nuri_button5)
+        registerForContextMenu(nuri_button6)
+        registerForContextMenu(nuri_button7)
+        registerForContextMenu(nuri_button8)
+        registerForContextMenu(nuri_button9)
+        registerForContextMenu(nuri_button12)
+        registerForContextMenu(nuri_button13)
+        registerForContextMenu(nuri_button14)
     }
 
     override fun onCreateContextMenu(
