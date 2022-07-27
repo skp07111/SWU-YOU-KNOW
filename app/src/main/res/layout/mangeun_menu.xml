@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/manguntext11"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="전주식콩나물국밥"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext10" />
+
+    <TextView
+        android:id="@+id/manguntext12"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="반반순대국밥\n6500원"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext11" />
+
+    <TextView
+        android:id="@+id/manguntext13"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="계란후라이추가"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext12" />
+
+    <TextView
+        android:id="@+id/manguntext14"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="곱빼기추가"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext13" />
+
+    <TextView
+        android:id="@+id/manguntext15"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="공기밥추가\n1000원"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext14" />
+
+    <TextView
+        android:id="@+id/manguntext16"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="사이다\n1000원"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext15" />
+
+    <TextView
+        android:id="@+id/manguntext17"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="코카콜라\n1000원"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext16" />
+
+    <TextView
+        android:id="@+id/manguntext18"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="웰치스(포도맛)\n1500원"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext17" />
+
+    <TextView
+        android:id="@+id/manguntext8"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="함박크림리조또"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext7" />
+
+    <TextView
+        android:id="@+id/manguntext9"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="함박토마토리조또"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext8" />
+
+    <TextView
+        android:id="@+id/manguntext6"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="오삼불고기덮밥\n6000원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext5" />
+
+    <TextView
+        android:id="@+id/manguntext7"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="해물짜장덮밥"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext6" />
+
+    <TextView
+        android:id="@+id/manguntext4"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="간장닭갈비덮밥"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext3" />
+
+    <TextView
+        android:id="@+id/manguntext5"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="오징어볶음덮밥\n6000원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext4" />
+
+    <TextView
+        android:id="@+id/manguntext3"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="매운닭갈비덮밥"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext2" />
+
+    <TextView
+        android:id="@+id/manguntext2"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="두루치기덮밥"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext1" />
+
+    <TextView
+        android:id="@+id/manguntext"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="만권화밥"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/manguntext1"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:text="양념목살덮밥"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext" />
+
+    <TextView
+        android:id="@+id/manguntext10"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="28dp"
+        android:text="해물순두부찌개"
+        app:layout_constraintStart_toEndOf="@+id/manguntext1"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

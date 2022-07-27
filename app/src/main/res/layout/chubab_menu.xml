@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/chutext10"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="불맛삼겹구이SET(츄밥+소금삼겹구이+계란후라이+김치볶음)\n4700원"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/chutext1"
+        app:layout_constraintTop_toBottomOf="@+id/chutext9" />
+
+    <TextView
+        android:id="@+id/chutext11"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="김치제육SET(츄밥+김치제육+계란후라이+김치볶음)\n4700원"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/chutext1"
+        app:layout_constraintTop_toBottomOf="@+id/chutext10" />
+
+    <TextView
+        android:id="@+id/chutext12"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="알밥SET(츄밥+날치알+계란후라이+김치볶음)\n4700원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/chutext1"
+        app:layout_constraintTop_toBottomOf="@+id/chutext11" />
+
+    <TextView
+        android:id="@+id/chutext13"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="비엔나SET(츄밥+비엔나소시지볶음+계란후라이+김치볶음)\n4700원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/chutext1"
+        app:layout_constraintTop_toBottomOf="@+id/chutext12" />
+
+    <TextView
+        android:id="@+id/chutext14"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="양념갈비SET(츄밥+양념갈비+계란후라이+김치볶음)\n4700원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/chutext1"
+        app:layout_constraintTop_toBottomOf="@+id/chutext13" />
+
+    <TextView
+        android:id="@+id/chutext15"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="육즙팡팡고기만두(육즙팡팡고기만두 6개)\n2500원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/chutext1"
+        app:layout_constraintTop_toBottomOf="@+id/chutext14" />
+
+    <TextView
+        android:id="@+id/chutext7"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="양념갈비(돼지고기+갈비양념)\n기본 : 3300원 \nSize Up : 4300원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chutext6" />
+
+    <TextView
+        android:id="@+id/chutext8"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="치3(날치알+김치볶음+참치마요)\n기본 : 3300원 \nSize Up : 4300원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chutext7" />
+
+    <TextView
+        android:id="@+id/manguntext6"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="삼겹마요(돈육목전지+마요네즈+데리야끼소스)\n기본 : 3400원\nSize Up : 4400원"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chutext5" />
+
+    <TextView
+        android:id="@+id/chutext6"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="비엔나마요(비엔나소시지볶음+마요네즈+소스)\n기본 : 3400원 \nSize Up : 4400원"
+        android:textSize="11sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/manguntext6" />
+
+    <TextView
+        android:id="@+id/chutext4"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="소금삼겹구이(목전지+특제소금+양파)\n기본 : 3300원 \nSize Up : 4300원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chutext3" />
+
+    <TextView
+        android:id="@+id/chutext5"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="김치제육(목살+김치볶음)\n기본 : 3300원 \nSize Up : 4300원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chutext4" />
+
+    <TextView
+        android:id="@+id/chutext3"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="곱창츄밥(야채곱창+곱창소스)\n기본 : 3500원 \nSize Up : 4300원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chutext2" />
+
+    <TextView
+        android:id="@+id/chutext2"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="치3(날치알+김치볶음+참치마요)\n기본 : 3300원 \nSize Up : 4300원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chutext1" />
+
+    <TextView
+        android:id="@+id/chubabtext"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="츄밥"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chutext1"
+        android:layout_width="230dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:text="참치마요(참치+스위트콘+마요소스+스모크햄)\n기본 : 3100원 \nSize Up : 4100원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chubabtext" />
+
+ <TextView
+        android:id="@+id/chutext9"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:text="곱창츄밥SET(츄밥+야채곱창+계란후라이+김치볶음)\n4700원"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/chutext1"
+        app:layout_constraintTop_toBottomOf="@+id/chubabtext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

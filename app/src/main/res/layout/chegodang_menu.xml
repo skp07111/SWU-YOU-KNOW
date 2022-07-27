@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/chegotext3"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="치즈돈가스\n6900원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext2" />
+
+    <TextView
+        android:id="@+id/chegotext4"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:text="크림돈가스\n6900원"
+        app:layout_constraintStart_toEndOf="@+id/chegotext1"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext" />
+
+    <TextView
+        android:id="@+id/chegotext2"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="생등심더블돈가스\n9500원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext4" />
+
+    <TextView
+        android:id="@+id/chegotext6"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:text="옛날돈가스\n6900원"
+        app:layout_constraintStart_toEndOf="@+id/chegotext3"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext5" />
+
+    <TextView
+        android:id="@+id/chegotext9"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="냉모밀\n"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext8" />
+
+    <TextView
+        android:id="@+id/chegotext10"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:text="쫄면\n4500원"
+        app:layout_constraintStart_toEndOf="@+id/chegotext9"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext8" />
+
+    <TextView
+        android:id="@+id/chegotext11"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="밥추가\n500원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext9" />
+
+    <TextView
+        android:id="@+id/chegotext7"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="세트1생1쫄(생등심돈가스 + 쫄면)\n9500원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext6" />
+
+    <TextView
+        android:id="@+id/chegotext8"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:text="세트2치즈+쫄(치즈돈가스+쫄면)\n10900원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext7" />
+
+    <TextView
+        android:id="@+id/chegotext5"
+        android:layout_width="151dp"
+        android:layout_height="48dp"
+        android:text="카레돈가스\n6900원"
+        app:layout_constraintStart_toEndOf="@+id/chegotext2"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext4" />
+
+    <TextView
+        android:id="@+id/chegotext"
+        android:layout_width="99dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:text="최고당돈가스"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/chegotext1"
+        android:layout_width="151dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="20dp"
+        android:text="수제생등심돈가스\n 5500원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chegotext" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
