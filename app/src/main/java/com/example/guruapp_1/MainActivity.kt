@@ -9,7 +9,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var storeMain: Button
     lateinit var ShuttleBusMain : Button
     lateinit var spaceMain: Button
-    lateinit var nurigwanMain: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,11 +29,6 @@ class MainActivity : AppCompatActivity() {
 
         spaceMain.setOnClickListener() {
             var intent = Intent(this, Map2Activity::class.java)
-            startActivity(intent)
-        }
-
-        nurigwanMain.setOnClickListener() {
-            var intent = Intent(this, NurigwanActivity::class.java)
             startActivity(intent)
         }
     }

@@ -1,16 +1,29 @@
 package com.example.guruapp_1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_auditorium.*
 
 class AuditoriumActivity : AppCompatActivity() {
+
+    lateinit var pandorothyMenu: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auditorium)
+
+        pandorothyMenu = findViewById<Button>(R.id.aud_button2)
+
+        pandorothyMenu.setOnClickListener() {
+            var intent = Intent(this, PandorothyActivity::class.java)
+            startActivity(intent)
+        }
+
         registerForContextMenu(aud_button1)
         registerForContextMenu(aud_button2)
     }
