@@ -3,21 +3,21 @@ package com.example.guruapp_1
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Button
+import android.widget.ImageButton
 
 class MainActivity : AppCompatActivity() {
-    lateinit var storeMain: Button
-    lateinit var ShuttleBusMain : Button
-    lateinit var spaceMain: Button
-    lateinit var cafeteriaMain : Button
+    lateinit var storeMain: ImageButton
+    lateinit var ShuttleBusMain : ImageButton
+    lateinit var spaceMain: ImageButton
+    lateinit var cafeteriaMain : ImageButton
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        storeMain = findViewById<Button>(R.id.swu_store)
-        ShuttleBusMain = findViewById<Button>(R.id.swu_schoolbus)
-        spaceMain = findViewById<Button>(R.id.swu_spaces)
-        cafeteriaMain = findViewById<Button>(R.id.swu_cafeteria)
+        storeMain = findViewById<ImageButton>(R.id.swu_store)
+        ShuttleBusMain = findViewById<ImageButton>(R.id.swu_schoolbus)
+        spaceMain = findViewById<ImageButton>(R.id.swu_spaces)
+        cafeteriaMain = findViewById<ImageButton>(R.id.swu_cafeteria)
 
         storeMain.setOnClickListener() {
             var intent = Intent(this, MapActivity::class.java)
