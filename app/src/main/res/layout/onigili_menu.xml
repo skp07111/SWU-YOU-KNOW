@@ -17,192 +17,209 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView57"
+        android:id="@+id/onigiri29"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView40"
+        android:text="계란추가\n500원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri22"
         app:layout_constraintTop_toBottomOf="@+id/textView53" />
 
     <TextView
-        android:id="@+id/textView56"
+        android:id="@+id/onigiri31"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView42"
-        app:layout_constraintTop_toBottomOf="@+id/textView52" />
+        android:text="치킨가라아게(5p)\n3000원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri21"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri30" />
 
     <TextView
-        android:id="@+id/textView55"
+        android:id="@+id/onigiri32"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView44"
-        app:layout_constraintTop_toBottomOf="@+id/textView56" />
+        android:text="새우튀김(2p)\n3000원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri22"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri31" />
 
     <TextView
-        android:id="@+id/textView52"
+        android:id="@+id/onigiri30"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView41"
-        app:layout_constraintTop_toBottomOf="@+id/textView57" />
+        android:text="치즈추가\n1000원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri21"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri29" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/onigiri1"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
         android:layout_marginTop="10dp"
-        android:text="얼큰해물짬뽕밥"
+        android:text="규동\n5900원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gaeun_coffee" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri_menu" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/onigiri2"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="얼큰해물짬뽕밥\n6700원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri1" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/onigiri3"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="보쌈규동\n7000원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri2" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/onigiri4"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="갈릭규동\n7000원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri3" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/onigiri5"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="화끈규동\n7000원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri4" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/onigiri6"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="규카레동\n7500"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri5" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/onigiri7"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="트리플치즈규동\n7500원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri6" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/onigiri8"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="가츠동\n6500원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri7" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/onigiri9"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="치킨마요동\n5900원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri8" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/onigiri10"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="스팸마요동\n6500원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri9" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/onigiri11"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="불닭마요동\n6500원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri10" />
 
     <TextView
-        android:id="@+id/textView13"
+        android:id="@+id/onigiri12"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="화끈부타동\n6900원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri11" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/onigiri13"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="부타마요동\n6900원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri12" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/onigiri14"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="치킨데리야끼동\n6900원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri13" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/onigiri15"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="차슈데리야끼동\n6900원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri14" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/onigiri16"
         android:layout_width="150dp"
         android:layout_height="33dp"
         android:layout_marginStart="3dp"
-        android:text="TextView"
+        android:text="해물돈부리\n6900원"
+        android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri15" />
 
     <TextView
-        android:id="@+id/gaeun_coffee"
+        android:id="@+id/onigiri_menu"
         android:layout_width="76dp"
         android:layout_height="32dp"
         android:layout_marginStart="36dp"
@@ -220,136 +237,139 @@
         android:layout_marginTop="12dp"
         android:text="면 류"
         android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/gaeun_coffee"
+        app:layout_constraintStart_toEndOf="@+id/onigiri_menu"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView42"
+        android:id="@+id/onigiri20"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
+        android:text="돈코츠라멘\6500원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri3"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri19" />
 
     <TextView
-        android:id="@+id/textView44"
+        android:id="@+id/onigiri22"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView43" />
+        android:text="치즈야끼우동\n6900원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri5"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri21" />
 
     <TextView
-        android:id="@+id/textView43"
+        android:id="@+id/onigiri21"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView42" />
+        android:text="얼큰해물짬뽕\n6500원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri4"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri20" />
 
     <TextView
-        android:id="@+id/textView41"
+        android:id="@+id/onigiri19"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
+        android:text="꼬치어묵우동\n5400원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri2"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri18" />
 
     <TextView
-        android:id="@+id/textView45"
+        android:id="@+id/onigiri23"
         android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="24dp"
+        android:text="해물야끼우동\n6900원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri6"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri22" />
+
+    <TextView
+        android:id="@+id/onigiri18"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView44" />
+        android:text="사누끼우동\n4000원"
 
-    <TextView
-        android:id="@+id/textView40"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri1"
         app:layout_constraintTop_toBottomOf="@+id/textView39" />
 
     <TextView
         android:id="@+id/textView46"
         android:layout_width="67dp"
         android:layout_height="31dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="32dp"
         android:text="오니기리"
         android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+        app:layout_constraintStart_toEndOf="@+id/onigiri10"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri23" />
 
     <TextView
-        android:id="@+id/textView48"
+        android:id="@+id/onigiri24"
         android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView47" />
-
-    <TextView
-        android:id="@+id/textView50"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
-
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView48" />
-
-    <TextView
-        android:id="@+id/textView47"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
+        android:text="보쌈김치\n1900원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri9"
         app:layout_constraintTop_toBottomOf="@+id/textView46" />
 
     <TextView
-        android:id="@+id/textView51"
+        android:id="@+id/onigiri28"
         android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView50" />
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:text="오니한컵\n4500원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri13"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri27" />
+
+    <TextView
+        android:id="@+id/onigiri26"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:text="구운스팸\n2500원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri11"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri25" />
+
+    <TextView
+        android:id="@+id/onigiri27"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:text="고소한멸치\n2500원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri12"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri26" />
+
+    <TextView
+        android:id="@+id/onigiri25"
+        android:layout_width="100dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:text="불장난오징어\n2200원"
+        android:textSize="13sp"
+        app:layout_constraintStart_toEndOf="@+id/onigiri10"
+        app:layout_constraintTop_toBottomOf="@+id/onigiri24" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="350dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="12dp"
         android:layout_marginBottom="20dp"
         android:ems="10"
         android:inputType="textPersonName"
@@ -359,27 +379,7 @@
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView55" />
-
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="31dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="3dp"
-        android:layout_marginEnd="5dp"
-        app:layout_constraintEnd_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2"
-        tools:srcCompat="@tools:sample/avatars" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="50dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="18dp"
-        android:text="5700원"
-        android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/onigiri31"
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

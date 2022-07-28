@@ -6,218 +6,218 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/gamtan_menu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="메뉴"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView71"
+        android:id="@+id/gmenu1"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
-        android:text="TextView"
+        android:text="떡볶이 : 3000원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/gamtan_menu" />
 
     <TextView
-        android:id="@+id/textView72"
+        android:id="@+id/gmenu2"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
-        android:text="TextView"
+        android:text="어묵 : 3000원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+        app:layout_constraintTop_toBottomOf="@+id/gmenu1" />
 
     <TextView
-        android:id="@+id/textView73"
+        android:id="@+id/gmenu3"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
-        android:text="TextView"
+        android:text="찰순대 : 4000원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+        app:layout_constraintTop_toBottomOf="@+id/gmenu2" />
 
     <TextView
-        android:id="@+id/textView74"
+        android:id="@+id/gmenu4"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
-        android:text="TextView"
+        android:text="바삭튀김(5개) : 3500원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView73" />
+        app:layout_constraintTop_toBottomOf="@+id/gmenu3" />
 
     <TextView
-        android:id="@+id/textView78"
+        android:id="@+id/gmenu8"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView74"
-        app:layout_constraintTop_toBottomOf="@+id/textView77" />
+        android:text=""
+        app:layout_constraintStart_toEndOf="@+id/gmenu4"
+        app:layout_constraintTop_toBottomOf="@+id/gmenu7" />
 
     <TextView
-        android:id="@+id/textView76"
+        android:id="@+id/gmenu6"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView72"
-        app:layout_constraintTop_toBottomOf="@+id/textView75" />
+        android:text="허브탕수육 : 5000원"
+        app:layout_constraintStart_toEndOf="@+id/gmenu2"
+        app:layout_constraintTop_toBottomOf="@+id/gmenu5" />
 
     <TextView
-        android:id="@+id/textView75"
+        android:id="@+id/gmenu5"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView71"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        android:text="순살치킨 : 8000원"
+        app:layout_constraintStart_toEndOf="@+id/gmenu1"
+        app:layout_constraintTop_toBottomOf="@+id/gamtan_menu" />
 
     <TextView
-        android:id="@+id/textView77"
+        android:id="@+id/gmenu7"
         android:layout_width="150dp"
         android:layout_height="30dp"
         android:layout_marginStart="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView73"
-        app:layout_constraintTop_toBottomOf="@+id/textView76" />
+        android:text="칠리탕수육 : 5500원"
+        app:layout_constraintStart_toEndOf="@+id/gmenu3"
+        app:layout_constraintTop_toBottomOf="@+id/gmenu6" />
 
     <TextView
-        android:id="@+id/textView81"
-        android:layout_width="253dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="25dp"
-        android:text="TextView"
+        android:id="@+id/gset1"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:text="1인세트(떡볶이+바삭튀김2개+찰순대)\n5500원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView80" />
+        app:layout_constraintTop_toBottomOf="@+id/gamtan_set" />
 
     <TextView
-        android:id="@+id/textView83"
-        android:layout_width="253dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="25dp"
-        android:text="TextView"
+        android:id="@+id/gset2"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:text="우동세트(떡볶이+바삭튀김+감탄우동)\n10500원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView82" />
+        app:layout_constraintTop_toBottomOf="@+id/gset1" />
 
     <TextView
-        android:id="@+id/textView80"
-        android:layout_width="253dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
-        android:text="TextView"
+        android:id="@+id/gset4"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:text="칠리 탕수육세트(떡볶이+바삭튀김+찰순대+칠리탕수육)\n16000원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView79" />
+        app:layout_constraintTop_toBottomOf="@+id/gset3" />
 
     <TextView
-        android:id="@+id/textView84"
-        android:layout_width="253dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="25dp"
-        android:text="TextView"
+        android:id="@+id/gset5"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:text="순살치킨세트(떡볶이+바삭튀김+찰순대+순살치킨)\n18500원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView83" />
+        app:layout_constraintTop_toBottomOf="@+id/gset4" />
 
     <TextView
-        android:id="@+id/textView79"
+        android:id="@+id/gset3"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:text="허브 탕수육세트(떡볶이+바삭튀김+찰순대+허브탕수육)\n15500원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gset2" />
+
+    <TextView
+        android:id="@+id/gamtan_set"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
-        android:text="TextView"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:text="Set Menu"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView74" />
+        app:layout_constraintTop_toBottomOf="@+id/gmenu4" />
 
     <TextView
-        android:id="@+id/textView82"
-        android:layout_width="253dp"
-        android:layout_height="27dp"
-        android:layout_marginStart="25dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView81" />
-
-    <TextView
-        android:id="@+id/textView90"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="256dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView86"
-        app:layout_constraintTop_toBottomOf="@+id/textView78" />
-
-    <TextView
-        android:id="@+id/textView91"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="100dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView87"
-        app:layout_constraintTop_toBottomOf="@+id/textView90" />
-
-    <TextView
-        android:id="@+id/textView92"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="100dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView88"
-        app:layout_constraintTop_toBottomOf="@+id/textView91" />
-
-    <TextView
-        android:id="@+id/textView86"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="15dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView85" />
-
-    <TextView
-        android:id="@+id/textView89"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="25dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView88" />
-
-    <TextView
-        android:id="@+id/textView85"
+        android:id="@+id/gamtan_side"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="25dp"
-        android:text="TextView"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="사이드 메뉴"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView84" />
+        app:layout_constraintTop_toBottomOf="@+id/gset5" />
 
     <TextView
-        android:id="@+id/textView87"
-        android:layout_width="100dp"
+        android:id="@+id/side4"
+        android:layout_width="140dp"
         android:layout_height="30dp"
-        android:layout_marginStart="25dp"
-        android:text="TextView"
+        android:layout_marginStart="24dp"
+        android:text="새우튀김우동 : 5000원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView86" />
+        app:layout_constraintTop_toBottomOf="@+id/side3" />
 
     <TextView
-        android:id="@+id/textView88"
-        android:layout_width="100dp"
+        android:id="@+id/side3"
+        android:layout_width="130dp"
         android:layout_height="30dp"
-        android:layout_marginStart="25dp"
-        android:text="TextView"
+        android:layout_marginStart="24dp"
+        android:text="어묵우동 : 5000원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView87" />
+        app:layout_constraintTop_toBottomOf="@+id/side2" />
+
+    <TextView
+        android:id="@+id/side5"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="296dp"
+        android:text="부산어묵(3개) : 2000원"
+        app:layout_constraintStart_toEndOf="@+id/side1"
+        app:layout_constraintTop_toBottomOf="@+id/gmenu8" />
+
+    <TextView
+        android:id="@+id/side7"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:text="떡갈비비빔국수 : 6000원"
+        app:layout_constraintStart_toEndOf="@+id/side3"
+        app:layout_constraintTop_toBottomOf="@+id/side6" />
+
+    <TextView
+        android:id="@+id/side6"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="8dp"
+        android:text="김치비빔국수 : 5000원"
+        app:layout_constraintStart_toEndOf="@+id/side2"
+        app:layout_constraintTop_toBottomOf="@+id/side5" />
+
+    <TextView
+        android:id="@+id/side1"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="잔치국수 : 4000원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gamtan_side" />
+
+    <TextView
+        android:id="@+id/side2"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="24dp"
+        android:text="감탄우동 : 4000원"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/side1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

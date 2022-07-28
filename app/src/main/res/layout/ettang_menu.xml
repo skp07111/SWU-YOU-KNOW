@@ -11,82 +11,38 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="에땅"
+        android:text="커피"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView71"
+        android:id="@+id/ecoffee1"
         android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="15dp"
-        android:text="TextView"
+        android:text="아메리카노\n HOT 1.8/ICE 2.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ettangtext" />
 
     <TextView
-        android:id="@+id/textView72"
+        android:id="@+id/ecoffee2"
         android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
-        android:text="TextView"
+        android:text="카페라떼\nHOT 2.3/ICE2.5\n바닐라 +500원"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView71" />
+        app:layout_constraintTop_toBottomOf="@+id/ecoffee1" />
 
     <TextView
-        android:id="@+id/textView73"
+        android:id="@+id/ecoffee3"
         android:layout_width="150dp"
-        android:layout_height="30dp"
+        android:layout_height="35dp"
         android:layout_marginStart="20dp"
-        android:text="TextView"
+        android:text="카푸치노\nHOT 2.3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView72" />
+        app:layout_constraintTop_toBottomOf="@+id/ecoffee2" />
 
-    <TextView
-        android:id="@+id/textView74"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView73" />
 
-    <TextView
-        android:id="@+id/textView78"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView74"
-        app:layout_constraintTop_toBottomOf="@+id/textView77" />
-
-    <TextView
-        android:id="@+id/textView76"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView72"
-        app:layout_constraintTop_toBottomOf="@+id/textView75" />
-
-    <TextView
-        android:id="@+id/textView75"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="15dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView71"
-        app:layout_constraintTop_toBottomOf="@+id/ettangtext" />
-
-    <TextView
-        android:id="@+id/textView77"
-        android:layout_width="150dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView73"
-        app:layout_constraintTop_toBottomOf="@+id/textView76" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

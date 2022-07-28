@@ -6,370 +6,356 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView53"
-        android:layout_width="74dp"
-        android:layout_height="28dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="12dp"
-        android:text="사이드 메뉴"
-        android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/textView39"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView57"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView40"
-        app:layout_constraintTop_toBottomOf="@+id/textView53" />
-
-    <TextView
-        android:id="@+id/textView56"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView42"
-        app:layout_constraintTop_toBottomOf="@+id/textView52" />
-
-    <TextView
-        android:id="@+id/textView55"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView44"
-        app:layout_constraintTop_toBottomOf="@+id/textView56" />
-
-    <TextView
-        android:id="@+id/textView52"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="24dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView41"
-        app:layout_constraintTop_toBottomOf="@+id/textView57" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="10dp"
-        android:text="얼큰해물짬뽕밥"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gaeun_coffee" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView7" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
-
-    <TextView
-        android:id="@+id/textView12"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView11" />
-
-    <TextView
-        android:id="@+id/textView13"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
-
-    <TextView
-        android:id="@+id/textView15"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14" />
-
-    <TextView
-        android:id="@+id/textView16"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15" />
-
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="150dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="3dp"
-        android:text="TextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16" />
-
-    <TextView
-        android:id="@+id/gaeun_coffee"
+        android:id="@+id/pan_coffee"
         android:layout_width="76dp"
         android:layout_height="32dp"
-        android:layout_marginStart="36dp"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="16dp"
-        android:text="커피"
+        android:text="COFFEE"
         android:textAlignment="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView39"
+        android:id="@+id/pcoffee9"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="카페모카\nHOT 3.0/ICE 3.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee8" />
+
+    <TextView
+        android:id="@+id/pcoffee8"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="(순)바닐라 카페라떼\nHOT 2.8/ICE 3.1"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee7" />
+
+    <TextView
+        android:id="@+id/pcoffee12"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="카푸치노\nHOT 2.4/ICE 2.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee11" />
+
+    <TextView
+        android:id="@+id/pcoffee10"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="카라멜 카페모카\nHOT 3.2/ICE 3.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee9" />
+
+    <TextView
+        android:id="@+id/pcoffee2"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="아메리카노\nHOT 1.5/ICE 1.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee1" />
+
+    <TextView
+        android:id="@+id/pcoffee3"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="달달아메리카노\nHOT 1.8/ICE 2.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee2" />
+
+    <TextView
+        android:id="@+id/pcoffee13"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="카라멜 마끼야또\nHOT 3.0/ICE 3.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee12" />
+
+    <TextView
+        android:id="@+id/pcoffee4"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="카페라떼\nHOT 2.4/ICE 2.7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee3" />
+
+    <TextView
+        android:id="@+id/pcoffee6"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:text="카페라떼(다크,자바칩,민트초코)\nHOT 2.7/ICE 3.0"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee5" />
+
+    <TextView
+        android:id="@+id/pcoffee1"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="10dp"
+        android:text="에스프레소\nHOT 1.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pan_coffee" />
+
+    <TextView
+        android:id="@+id/pcoffee11"
+        android:layout_width="110dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="3dp"
+        android:text="카페모카(다크,자바칩,민트)\nHOT 3.2/ICE 3.5"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee10" />
+
+    <TextView
+        android:id="@+id/pcoffee7"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="3dp"
+        android:text="달달 카페라떼\nHOT 2.7/ICE 3.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee6" />
+
+    <TextView
+        android:id="@+id/pcoffee5"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="3dp"
+        android:text="카페라떼(바닐라,카라멜,헤이즐넛)\nHOT 2.6/ICE 2.8"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee4" />
+
+    <TextView
+        android:id="@+id/pan_bev"
         android:layout_width="74dp"
         android:layout_height="30dp"
-        android:layout_marginStart="72dp"
-        android:layout_marginTop="12dp"
-        android:text="면 류"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="BEVERAGE"
         android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/gaeun_coffee"
+        app:layout_constraintStart_toEndOf="@+id/pan_coffee"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView42"
-        android:layout_width="100dp"
+        android:id="@+id/pan_ade"
+        android:layout_width="74dp"
         android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/textView41" />
-
-    <TextView
-        android:id="@+id/textView44"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView6"
-        app:layout_constraintTop_toBottomOf="@+id/textView43" />
-
-    <TextView
-        android:id="@+id/textView43"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView5"
-        app:layout_constraintTop_toBottomOf="@+id/textView42" />
-
-    <TextView
-        android:id="@+id/textView41"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/textView40" />
-
-    <TextView
-        android:id="@+id/textView45"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView7"
-        app:layout_constraintTop_toBottomOf="@+id/textView44" />
-
-    <TextView
-        android:id="@+id/textView40"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView39" />
-
-    <TextView
-        android:id="@+id/textView46"
-        android:layout_width="67dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="36dp"
-        android:text="오니기리"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="56dp"
+        android:text="ADE"
         android:textAlignment="center"
-        app:layout_constraintStart_toEndOf="@+id/textView9"
-        app:layout_constraintTop_toBottomOf="@+id/textView45" />
+        app:layout_constraintStart_toStartOf="@+id/pcoffee9"
+        app:layout_constraintTop_toBottomOf="@+id/pbev8" />
 
     <TextView
-        android:id="@+id/textView48"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="12dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/textView47" />
+        android:id="@+id/pade1"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="108dp"
+        android:text="(수)에이드(자몽,레몬,유자)\nICE 2.5"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee9"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee8" />
 
     <TextView
-        android:id="@+id/textView50"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/textView49" />
-
-    <TextView
-        android:id="@+id/textView49"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toBottomOf="@+id/textView48" />
-
-    <TextView
-        android:id="@+id/textView47"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView10"
-        app:layout_constraintTop_toBottomOf="@+id/textView46" />
-
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="4dp"
-        android:text="TextView"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
-        app:layout_constraintTop_toBottomOf="@+id/textView50" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="350dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text="1500원 추가 시 set메뉴"
-        android:textAlignment="center"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView55" />
-
-    <TextView
-        android:id="@+id/textView20"
-        android:layout_width="50dp"
-        android:layout_height="13dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginTop="18dp"
-        android:text="5700원"
+        android:id="@+id/pade3"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="108dp"
+        android:text="딸기,딸기피나콜라다,핑크구아바,망고에이드\nICE 2.8"
         android:textSize="10sp"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toTopOf="@+id/textView2" />
+        app:layout_constraintStart_toEndOf="@+id/pcoffee11"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee10" />
+
+    <TextView
+        android:id="@+id/pade2"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="108dp"
+        android:text="청포도/자몽 에이드\nICE 2.8"
+        android:textSize="9sp"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee10"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee9" />
+
+    <TextView
+        android:id="@+id/pan_tea"
+        android:layout_width="74dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:text="TEA"
+        android:textAlignment="center"
+        app:layout_constraintStart_toEndOf="@+id/pan_bev"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/pbev1"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:text="초콜릿\nHOT 2.5/ICE 2.8"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee1"
+        app:layout_constraintTop_toBottomOf="@+id/pan_bev" />
+
+    <TextView
+        android:id="@+id/pbev2"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="다크,자바칩,민트초코\nHOT 2.7/ICE 3.0"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee2"
+        app:layout_constraintTop_toBottomOf="@+id/pbev1" />
+
+    <TextView
+        android:id="@+id/pbev3"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="그린티라떼\nHOT 2.8/ICE 3.1"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee3"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee2" />
+
+    <TextView
+        android:id="@+id/pbev4"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="자색고구마 라떼\nHOT:2.8/ICE 3.1"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee4"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee3" />
+
+    <TextView
+        android:id="@+id/pbev5"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="(순)바닐라\nHOT 3.0/ICE 3.3"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee5"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee4" />
+
+    <TextView
+        android:id="@+id/pbev6"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="곡물라떼\nHOT 3.0/ICE 3.3"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee6"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee5" />
+
+    <TextView
+        android:id="@+id/pbev7"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="쿠키앤크림 라떼\nHOT 3.0/ICE 3.3"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee7"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee6" />
+
+    <TextView
+        android:id="@+id/pbev8"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="과일라떼(망고,딸기,피나콜라다,핑크구아바)\nICE 3.3"
+        android:textSize="11sp"
+        app:layout_constraintStart_toEndOf="@+id/pcoffee8"
+        app:layout_constraintTop_toBottomOf="@+id/pcoffee7" />
+
+    <TextView
+        android:id="@+id/ptea1"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:text="복숭아 아이스티\nICE 2.0"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/pbev1"
+        app:layout_constraintTop_toBottomOf="@+id/pan_tea" />
+
+    <TextView
+        android:id="@+id/ptea2"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="레몬 히비스커스애플\nHOT 3.0/ICE 3.3"
+        app:layout_constraintStart_toEndOf="@+id/pbev2"
+        app:layout_constraintTop_toBottomOf="@+id/ptea1" />
+
+    <TextView
+        android:id="@+id/ptea3"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="유자 네이블오렌지\nHOT 3.0/ICE 3.3"
+        app:layout_constraintStart_toEndOf="@+id/pbev3"
+        app:layout_constraintTop_toBottomOf="@+id/ptea2" />
+
+    <TextView
+        android:id="@+id/ptea4"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="자몽 레드애플\nHOT:3.0/ICE 3.3"
+        app:layout_constraintStart_toEndOf="@+id/pbev4"
+        app:layout_constraintTop_toBottomOf="@+id/ptea3" />
+
+    <TextView
+        android:id="@+id/ptea5"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="(수)자몽차\nHOT 2.7/ICE 3.0"
+        app:layout_constraintStart_toEndOf="@+id/pbev5"
+        app:layout_constraintTop_toBottomOf="@+id/ptea4" />
+
+    <TextView
+        android:id="@+id/ptea6"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="(수)레몬차\nHOT 2.7/ICE 3.0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pbev6"
+        app:layout_constraintTop_toBottomOf="@+id/ptea5" />
+
+    <TextView
+        android:id="@+id/ptea7"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="(수)유자차\nHOT 2.7/ICE 3.0"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pbev6"
+        app:layout_constraintTop_toBottomOf="@+id/ptea6" />
+
+    <TextView
+        android:id="@+id/ptea8"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="유기농 허브티(루이보스,캐모마일,페퍼민트)\nHOT 2.5/ICE 2.8"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pbev8"
+        app:layout_constraintTop_toBottomOf="@+id/ptea7" />
+
+    <TextView
+        android:id="@+id/ptea9"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="홍차(얼그레이,다즐링,아쌈)\nHOT 2.5/ICE 2.8"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pbev8"
+        app:layout_constraintTop_toBottomOf="@+id/ptea8" />
+
+    <TextView
+        android:id="@+id/ptea10"
+        android:layout_width="110dp"
+        android:layout_height="35dp"
+        android:text="블랜딩티(히비스커스 애플/네이블오렌지)\nHOT 2.5/ICE 2.8"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@+id/pbev8"
+        app:layout_constraintTop_toBottomOf="@+id/ptea9" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
