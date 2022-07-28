@@ -6,58 +6,54 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+    <ImageButton
         android:id="@+id/swu_cafeteria"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:background="@drawable/button_background4"
-        android:text="이번주\n식단"
-        android:textSize="16sp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toTopOf="@+id/swu_schoolbus"
         app:layout_constraintEnd_toStartOf="@+id/swu_store"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_cafeteria"
+        android:background="#00ffffff"
+        android:scaleType="fitStart" />
 
-    <Button
+    <ImageButton
         android:id="@+id/swu_schoolbus"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/button_background4"
-        android:text="셔틀버스"
-        android:textSize="16sp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/swu_spaces"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/swu_cafeteria" />
+        app:layout_constraintTop_toBottomOf="@+id/swu_cafeteria"
+        app:srcCompat="@drawable/logo_schoolbus" />
 
-    <Button
+    <ImageButton
         android:id="@+id/swu_spaces"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/button_background4"
-        android:text="학교공간"
-        android:textSize="16sp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/swu_schoolbus"
-        app:layout_constraintTop_toBottomOf="@id/swu_store" />
+        app:layout_constraintTop_toBottomOf="@id/swu_store"
+        app:srcCompat="@drawable/logo_spaces"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"/>
 
-    <Button
+    <ImageButton
         android:id="@+id/swu_store"
-        android:layout_width="wrap_content"
-        android:layout_height="80dp"
-        android:background="@drawable/button_background4"
-        android:text="교내상점"
-        android:textSize="16sp"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toTopOf="@+id/swu_spaces"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/swu_cafeteria"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/logo_store"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
