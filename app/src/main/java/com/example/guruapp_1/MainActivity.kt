@@ -9,6 +9,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var storeMain: Button
     lateinit var ShuttleBusMain : Button
     lateinit var spaceMain: Button
+    lateinit var cafeteriaMain : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         storeMain = findViewById<Button>(R.id.swu_store)
         ShuttleBusMain = findViewById<Button>(R.id.swu_schoolbus)
         spaceMain = findViewById<Button>(R.id.swu_spaces)
+        cafeteriaMain = findViewById<Button>(R.id.swu_cafeteria)
 
         storeMain.setOnClickListener() {
             var intent = Intent(this, MapActivity::class.java)
@@ -29,6 +31,11 @@ class MainActivity : AppCompatActivity() {
 
         spaceMain.setOnClickListener() {
             var intent = Intent(this, Map2Activity::class.java)
+            startActivity(intent)
+        }
+
+        cafeteriaMain.setOnClickListener() {
+            var intent = Intent(this, CafeteriaActivity::class.java)
             startActivity(intent)
         }
     }
