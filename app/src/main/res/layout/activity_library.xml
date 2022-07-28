@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center"
-        android:text="도서관"
-        android:textColor="#0000FF"
-        android:textSize="34sp"></TextView>
+        android:textColor="#792222"
+        android:fontFamily="@font/scdream7"
+        android:text="중앙도서관"
+        android:textSize="38sp"></TextView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,8 +29,9 @@
             android:id="@+id/lib_text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
+            android:layout_marginHorizontal="28dp"
             android:gravity="center"
+            android:fontFamily="@font/cafe24surround"
             android:text="2F"
             android:textSize="24sp" />
 
@@ -37,8 +39,9 @@
             android:id="@+id/lib_text3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
+            android:layout_marginHorizontal="28dp"
             android:gravity="center"
+            android:fontFamily="@font/cafe24surround"
             android:text="3F"
             android:textSize="24sp" />
 
@@ -46,8 +49,9 @@
             android:id="@+id/lib_text4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
+            android:layout_marginHorizontal="28dp"
             android:gravity="center"
+            android:fontFamily="@font/cafe24surround"
             android:text="4F"
             android:textSize="24sp" />
 
@@ -55,8 +59,9 @@
             android:id="@+id/lib_text5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="30dp"
+            android:layout_marginHorizontal="28dp"
             android:gravity="center"
+            android:fontFamily="@font/cafe24surround"
             android:text="5F"
             android:textSize="24sp" />
     </LinearLayout>
@@ -73,6 +78,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="6dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="2층\n주제자료실" />
 
@@ -82,6 +88,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="6dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="3층\n주제자료실" />
 
@@ -91,6 +98,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="6dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="4층\n주제자료실" />
 
@@ -100,6 +108,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="6dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="5층\n슈니나래" />
 
@@ -111,6 +120,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:gravity="center"
+        android:fontFamily="@font/cafe24surround"
         android:text="1F"
         android:textSize="24sp"></TextView>
 
@@ -126,6 +136,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="소셜러닝\n라운지" />
 
@@ -135,6 +146,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="멀티미디어\n라운지" />
 
@@ -144,6 +156,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="커뮤니티\n라운지" />
 
@@ -153,6 +166,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="슈니\n마루" />
     </LinearLayout>
@@ -168,6 +182,7 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="멀티\n플렉스존" />
     </LinearLayout>

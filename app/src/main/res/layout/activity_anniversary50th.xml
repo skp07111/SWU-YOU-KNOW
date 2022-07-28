@@ -14,8 +14,9 @@
         android:layout_marginTop="30dp"
         android:gravity="center"
         android:text="50주년 기념관"
-        android:textColor="#0000FF"
-        android:textSize="34sp"></TextView>
+        android:textColor="#792222"
+        android:fontFamily="@font/scdream7"
+        android:textSize="38sp"></TextView>
 
     <TextView
         android:id="@+id/fifty_text2"
@@ -23,6 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:gravity="center"
+        android:fontFamily="@font/cafe24surround"
         android:text="1F"
         android:textSize="24sp"></TextView>
 
@@ -39,6 +41,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_background3"
+            android:fontFamily="@font/cafe24surround"
             android:text="교직원\n식당" />
 
         <Button
@@ -48,6 +51,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_background3"
+            android:fontFamily="@font/cafe24surround"
             android:text="뚜레\n쥬르" />
 
         <Button
@@ -57,6 +61,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_background3"
+            android:fontFamily="@font/cafe24surround"
             android:text="오니기리와\n이규동" />
 
         <Button
@@ -66,6 +71,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_background3"
+            android:fontFamily="@font/cafe24surround"
             android:text="감탄\n떡볶이" />
     </LinearLayout>
 
@@ -81,6 +87,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/button_background3"
+            android:fontFamily="@font/cafe24surround"
             android:text="CU" />
     </LinearLayout>
 
@@ -92,6 +99,7 @@
         android:layout_marginTop="19dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
+        android:fontFamily="@font/cafe24surround"
         android:text="B1F"
         android:textSize="24sp"/>
 
@@ -107,6 +115,7 @@
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_background3"
+            android:fontFamily="@font/cafe24surround"
             android:text="카피\n웍스"/>
 
     </LinearLayout>

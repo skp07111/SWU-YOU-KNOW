@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center"
+        android:textColor="#792222"
+        android:fontFamily="@font/scdream7"
         android:text="인문사회관"
-        android:textColor="#0000FF"
-        android:textSize="34sp"></TextView>
+        android:textSize="38sp"></TextView>
 
     <TextView
         android:id="@+id/insa2_text2"
@@ -24,8 +25,10 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
+        android:fontFamily="@font/cafe24surround"
         android:text="3F"
         android:textSize="24sp" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="70dp"
@@ -36,6 +39,7 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="3층\n로비" />
 
@@ -44,6 +48,7 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="3층\n휴게실" />
 
@@ -55,6 +60,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
+        android:fontFamily="@font/cafe24surround"
         android:text="2F"
         android:textSize="24sp" />
 
@@ -68,6 +74,7 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="인터넷\n카페" />
 
@@ -80,6 +87,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
         android:gravity="center"
+        android:fontFamily="@font/cafe24surround"
         android:text="1F"
         android:textSize="24sp" />
     <LinearLayout
@@ -92,6 +100,7 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="1층\n휴게실" />
 

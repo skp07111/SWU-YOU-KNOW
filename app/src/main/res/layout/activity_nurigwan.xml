@@ -13,9 +13,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:gravity="center"
+        android:textColor="#792222"
+        android:fontFamily="@font/scdream7"
         android:text="학생누리관"
-        android:textColor="#0000FF"
-        android:textSize="34sp"></TextView>
+        android:textSize="38sp"></TextView>
 
     <TextView
         android:id="@+id/nuri_text2"
@@ -24,6 +25,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginBottom="-11dp"
         android:gravity="center"
+        android:fontFamily="@font/cafe24surround"
         android:text="1F"
         android:textSize="24sp"></TextView>
 
@@ -38,7 +40,9 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="비틀\n쥬스" />
 
@@ -47,7 +51,9 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginBottom="20dp"
+            android:layout_marginBottom="18dp"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="퀴즈\n노스" />
 
@@ -57,6 +63,8 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="가은" />
 
@@ -66,6 +74,8 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="츄밥" />
     </LinearLayout>
@@ -80,8 +90,9 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="-11dp"
+            android:layout_marginTop="-8.5dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="우리\n은행" />
 
@@ -90,8 +101,9 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="-11dp"
+            android:layout_marginTop="-8.5dp"
             android:layout_marginBottom="20dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="누리\n스토어" />
 
@@ -101,6 +113,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="안경점" />
 
@@ -109,8 +122,8 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="-1dp"
             android:layout_marginBottom="10dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="SWEET U"
             android:textSize="13sp" />
@@ -127,6 +140,7 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
+            android:fontFamily="@font/cafe24surround"
             android:background="@drawable/button_background3"
             android:text="우체국" />
     </LinearLayout>
@@ -136,8 +150,9 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginTop="19dp"
-    android:layout_marginBottom="10dp"
+    android:layout_marginBottom="1dp"
     android:gravity="center"
+        android:fontFamily="@font/cafe24surround"
     android:text="B1F"
     android:textSize="24sp"/>
 
@@ -151,11 +166,11 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="-11dp"
-            android:layout_marginBottom="20dp"
-            android:enabled="false"
-            android:clickable="false"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/button_background4"
+            android:clickable="false"
+            android:enabled="false"
+            android:fontFamily="@font/cafe24surround"
             android:text="월남\n선생" />
 
         <Button
@@ -163,10 +178,12 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="8.5dp"
             android:layout_marginBottom="10dp"
-            android:enabled="false"
-            android:clickable="false"
             android:background="@drawable/button_background4"
+            android:clickable="false"
+            android:enabled="false"
+            android:fontFamily="@font/cafe24surround"
             android:text="아딸" />
 
         <Button
@@ -174,20 +191,21 @@
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="-10.5dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_background3"
-            android:text="만권\n화밥"/>
+            android:fontFamily="@font/cafe24surround"
+            android:text="만권\n화밥" />
 
         <Button
             android:id="@+id/nuri_button13"
             android:layout_width="75dp"
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
-            android:layout_marginTop="-11dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/button_background3"
+            android:fontFamily="@font/cafe24surround"
             android:text="최고당\n돈가스" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -201,6 +219,7 @@
             android:layout_height="60dp"
             android:layout_marginHorizontal="5dp"
             android:background="@drawable/button_background3"
+            android:fontFamily="@font/cafe24surround"
             android:text="에땅" />
     </LinearLayout>
 
