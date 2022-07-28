@@ -6,12 +6,12 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/ettangtext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="TextView"
+        android:text="에땅"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,7 +23,7 @@
         android:layout_marginTop="15dp"
         android:text="TextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/ettangtext" />
 
     <TextView
         android:id="@+id/textView72"
@@ -78,7 +78,7 @@
         android:layout_marginTop="15dp"
         android:text="TextView"
         app:layout_constraintStart_toEndOf="@+id/textView71"
-        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+        app:layout_constraintTop_toBottomOf="@+id/ettangtext" />
 
     <TextView
         android:id="@+id/textView77"
