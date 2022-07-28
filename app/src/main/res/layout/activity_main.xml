@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/swu_cafeteria"
         android:layout_width="wrap_content"
         android:layout_height="80dp"
         android:background="@drawable/button_background4"
@@ -30,7 +30,7 @@
         app:layout_constraintEnd_toStartOf="@+id/swu_spaces"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/swu_cafeteria" />
 
     <Button
         android:id="@+id/swu_spaces"
@@ -56,7 +56,7 @@
         app:layout_constraintBottom_toTopOf="@+id/swu_spaces"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/swu_cafeteria"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
