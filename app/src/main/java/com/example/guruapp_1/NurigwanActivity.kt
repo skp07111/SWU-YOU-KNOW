@@ -1,13 +1,16 @@
 package com.example.guruapp_1
 
 import android.content.Intent
+import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import kotlinx.android.synthetic.main.activity_auditorium.*
 import kotlinx.android.synthetic.main.activity_nurigwan.*
+import java.util.*
 
 class NurigwanActivity : AppCompatActivity() {
 
@@ -66,6 +69,47 @@ class NurigwanActivity : AppCompatActivity() {
         registerForContextMenu(nuri_button12)
         registerForContextMenu(nuri_button13)
         registerForContextMenu(nuri_button14)
+        disabledGusia()
+    }
+
+    private fun disabledGusia() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 19)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button12.setBackgroundResource(R.drawable.button_background4)
+                nuri_button13.setBackgroundResource(R.drawable.button_background4)
+                nuri_button12.setOnClickListener() {
+                    false
+                }
+                nuri_button13.setOnClickListener() {
+                    false
+                }
+                unregisterForContextMenu(nuri_button12)
+                unregisterForContextMenu(nuri_button13)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 10)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button12.setOnClickListener() {
+                    true
+                }
+                nuri_button13.setOnClickListener() {
+                    true
+                }
+                registerForContextMenu(nuri_button12)
+                registerForContextMenu(nuri_button13)
+            }
+        }, cal.time)
     }
 
     override fun onCreateContextMenu(

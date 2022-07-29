@@ -1,6 +1,7 @@
 package com.example.guruapp_1
 
 import android.content.Intent
+import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
@@ -8,6 +9,8 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_auditorium.*
+import kotlinx.android.synthetic.main.activity_librarycafe.*
+import java.util.*
 
 class AuditoriumActivity : AppCompatActivity() {
 
@@ -26,6 +29,70 @@ class AuditoriumActivity : AppCompatActivity() {
 
         registerForContextMenu(aud_button1)
         registerForContextMenu(aud_button2)
+        disabledBookstore()
+        disabledPandorothy()
+    }
+
+    private fun disabledBookstore() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 17)
+        cal.set(Calendar.MINUTE, 30)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                aud_button1.setBackgroundResource(R.drawable.button_background4)
+                aud_button1.setOnClickListener() {
+                    false
+                }
+                unregisterForContextMenu(aud_button1)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 8)
+        cal.set(Calendar.MINUTE, 30)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                aud_button1.setOnClickListener() {
+                    true
+                }
+                registerForContextMenu(aud_button1)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledPandorothy() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                aud_button2.setBackgroundResource(R.drawable.button_background4)
+                aud_button2.setOnClickListener() {
+                    false
+                }
+                unregisterForContextMenu(aud_button2)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 8)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                aud_button2.setOnClickListener() {
+                    true
+                }
+                registerForContextMenu(aud_button2)
+            }
+        }, cal.time)
     }
 
     override fun onCreateContextMenu(
