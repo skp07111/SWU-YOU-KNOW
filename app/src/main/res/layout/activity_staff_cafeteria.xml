@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_weight="1"
+        android:layout_marginBottom="30dp"
         android:text="교직원 식당"
         android:textSize="24sp" />
 
@@ -22,10 +23,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
+        android:layout_marginBottom="30dp"
         android:layout_weight="1"
-        android:layout_marginBottom="10dp"
         android:text="운영시간 :"
-        android:textSize="16sp" />
+        android:textSize="14sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -40,21 +41,22 @@
             android:layout_gravity="left"
             android:layout_marginBottom="10dp"
             android:text="금주의 식단"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <ImageView
-            android:id="@+id/imageView1"
+            android:id="@+id/staffImageView1"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:transitionName="imgTrans" />
 
         <Button
             android:id="@+id/button1"
-            android:layout_width="75dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:layout_gravity="right"
             android:onClick="bt1"
-            android:text="업로드" />
+            android:text="업로드"
+            android:textSize="8sp" />
 
     </LinearLayout>
 
@@ -71,21 +73,22 @@
             android:layout_gravity="left"
             android:layout_marginBottom="10dp"
             android:text="오늘의 점심 사진"
-            android:textSize="16sp" />
+            android:textSize="14sp" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/staffImageView2"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="150dp"
             android:transitionName="imgTrans" />
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="75dp"
-            android:layout_height="40dp"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
             android:layout_gravity="right"
             android:onClick="bt2"
-            android:text="업로드" />
+            android:text="업로드"
+            android:textSize="8sp" />
 
 
     </LinearLayout>

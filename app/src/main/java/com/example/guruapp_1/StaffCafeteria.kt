@@ -15,39 +15,54 @@ import java.io.File
 import java.io.FileOutputStream
 
 class StaffCafeteria : AppCompatActivity() {
+
     private val resultLauncher: ActivityResultLauncher<Intent>? = null
 
-    lateinit var imageView1: ImageView
-    lateinit var imageView2: ImageView
-    var imgName1 = "osz1.png" // 이미지 이름
-    var imgName2 = "osz2.png" // 이미지 이름
+    lateinit var staffImageView1: ImageView
+    lateinit var staffImageView2: ImageView
+
+    var staffImgName1 = "StaffCafeteria1.png" // 이미지 이름
+    var staffImgName2 = "StaffCafeteria2.png" // 이미지 이름
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_staff_cafeteria)
 
-        imageView1 = findViewById(R.id.imageView1)
-        imageView2 = findViewById(R.id.imageView2)
+        staffImageView1 = findViewById(R.id.staffImageView1)
+        staffImageView2 = findViewById(R.id.staffImageView2)
+
+        staffImageView1.setOnClickListener { clickEvent(it,1) }
+        staffImageView2.setOnClickListener { clickEvent(it,2) }
+
 
         try {
-            val imgpath1 = "$cacheDir/$imgName1" // 내부 저장소에 저장되어 있는 이미지 경로
+            val imgpath1 = "$cacheDir/$staffImgName1" // 내부 저장소에 저장되어 있는 이미지 경로
             val bm1 = BitmapFactory.decodeFile(imgpath1)
-            imageView1.setImageBitmap(bm1) // 내부 저장소에 저장된 이미지를 이미지뷰에 셋
+            staffImageView1.setImageBitmap(bm1) // 내부 저장소에 저장된 이미지를 이미지뷰에 셋
             Toast.makeText(applicationContext, "파일 로드 성공", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
             Toast.makeText(applicationContext, "파일 로드 실패", Toast.LENGTH_SHORT).show()
         }
 
         try {
-            val imgpath2 = "$cacheDir/$imgName2" // 내부 저장소에 저장되어 있는 이미지 경로
+            val imgpath2 = "$cacheDir/$staffImgName2" // 내부 저장소에 저장되어 있는 이미지 경로
             val bm2 = BitmapFactory.decodeFile(imgpath2)
-            imageView2.setImageBitmap(bm2) // 내부 저장소에 저장된 이미지를 이미지뷰에 셋
+            staffImageView2.setImageBitmap(bm2) // 내부 저장소에 저장된 이미지를 이미지뷰에 셋
             Toast.makeText(applicationContext, "파일 로드 성공", Toast.LENGTH_SHORT).show()
         } catch (e: Exception) {
             Toast.makeText(applicationContext, "파일 로드 실패", Toast.LENGTH_SHORT).show()
         }
+
     }
+
+    private fun clickEvent(view: View, pos: Int) {
+        val intent = Intent(this, ImageActivity::class.java)
+        intent.putExtra("pos", pos)
+        val opt = ActivityOptions.makeSceneTransitionAnimation(this, view, "imgTrans")
+        startActivity(intent, opt.toBundle())
+    }
+
 
     fun bt1(view1: View?) {    // 이미지 선택 누르면 실행됨 이미지 고를 갤러리 오픈
         val intent = Intent()
@@ -73,7 +88,7 @@ class StaffCafeteria : AppCompatActivity() {
                     try {
                         val instream = resolver.openInputStream(fileUri!!)
                         val imgBitmap = BitmapFactory.decodeStream(instream)
-                        imageView1!!.setImageBitmap(imgBitmap) // 선택한 이미지 이미지뷰에 셋
+                        staffImageView1!!.setImageBitmap(imgBitmap) // 선택한 이미지 이미지뷰에 셋
                         instream!!.close() // 스트림 닫아주기
                         saveBitmapToJpeg1(imgBitmap) // 내부 저장소에 저장
                         Toast.makeText(applicationContext, "파일 불러오기 성공", Toast.LENGTH_SHORT).show()
@@ -93,7 +108,7 @@ class StaffCafeteria : AppCompatActivity() {
                     try {
                         val instream = resolver.openInputStream(fileUri!!)
                         val imgBitmap = BitmapFactory.decodeStream(instream)
-                        imageView2!!.setImageBitmap(imgBitmap) // 선택한 이미지 이미지뷰에 셋
+                        staffImageView2!!.setImageBitmap(imgBitmap) // 선택한 이미지 이미지뷰에 셋
                         instream!!.close() // 스트림 닫아주기
                         saveBitmapToJpeg2(imgBitmap) // 내부 저장소에 저장
                         Toast.makeText(applicationContext, "파일 불러오기 성공", Toast.LENGTH_SHORT).show()
@@ -105,7 +120,7 @@ class StaffCafeteria : AppCompatActivity() {
         }
 
     fun saveBitmapToJpeg1(bitmap: Bitmap) {   // 선택한 이미지 내부 저장소에 저장
-        val tempFile = File(cacheDir, imgName1) // 파일 경로와 이름 넣기
+        val tempFile = File(cacheDir, staffImgName1) // 파일 경로와 이름 넣기
         try {
             tempFile.createNewFile() // 자동으로 빈 파일을 생성하기
             val out = FileOutputStream(tempFile) // 파일을 쓸 수 있는 스트림을 준비하기
@@ -118,7 +133,7 @@ class StaffCafeteria : AppCompatActivity() {
     }
 
     fun saveBitmapToJpeg2(bitmap: Bitmap) {   // 선택한 이미지 내부 저장소에 저장
-        val tempFile = File(cacheDir, imgName2) // 파일 경로와 이름 넣기
+        val tempFile = File(cacheDir, staffImgName2) // 파일 경로와 이름 넣기
         try {
             tempFile.createNewFile() // 자동으로 빈 파일을 생성하기
             val out = FileOutputStream(tempFile) // 파일을 쓸 수 있는 스트림을 준비하기
