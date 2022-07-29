@@ -97,5 +97,3 @@ class Anniversary50thActivity : AppCompatActivity() {
         return super.onContextItemSelected(item)
     }
 }
-
-
