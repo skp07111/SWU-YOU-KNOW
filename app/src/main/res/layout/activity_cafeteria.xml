@@ -20,7 +20,7 @@
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:fontFamily="@font/cafe24surround"
-            android:background="@drawable/button_background5"
+            android:background="@drawable/tv_stroke_rect"
             android:textSize="17sp"
             android:text="교직원" />
 
@@ -31,6 +31,7 @@
             android:fontFamily="@font/cafe24surround"
             android:layout_gravity="center"
             android:gravity="center"
+            android:textColor="@color/cardview_dark_background"
             android:text="[점심]\n11:30 ~ 13:30">
 
         </TextView>
@@ -47,7 +48,7 @@
             android:layout_width="140dp"
             android:layout_height="140dp"
             android:fontFamily="@font/cafe24surround"
-            android:background="@drawable/button_background5"
+            android:background="@drawable/tv_stroke_rect"
             android:textSize="17sp"
             android:text="기숙사" />
 
@@ -58,6 +59,7 @@
             android:fontFamily="@font/cafe24surround"
             android:layout_gravity="center"
             android:gravity="center"
+            android:textColor="@color/cardview_dark_background"
             android:text="[점심]\n11:30 ~ 13:30\n\n[저녁]\n17:00 ~ 18:30\n\n[Break time]\n14:00 ~ 17:00">
 
         </TextView>
