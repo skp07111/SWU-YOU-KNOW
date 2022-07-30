@@ -57,18 +57,43 @@ class NurigwanActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        registerForContextMenu(nuri_button2)
-        registerForContextMenu(nuri_button4)
         registerForContextMenu(nuri_button5)
-        registerForContextMenu(nuri_button6)
-        registerForContextMenu(nuri_button7)
-        registerForContextMenu(nuri_button8)
         registerForContextMenu(nuri_button9)
 
+        disabledQuiznos()
         disabledCafe()
+        disabledChoobap()
+        disabledNuristore()
+        disabledGlass()
+        disabledSweetu()
         disabledGusia()
         disabledEtang()
 
+    }
+
+    private fun disabledQuiznos() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 8)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(nuri_button2)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 30)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button2.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(nuri_button2)
+            }
+        }, cal.time)
     }
 
     private fun disabledCafe() {
@@ -95,6 +120,106 @@ class NurigwanActivity : AppCompatActivity() {
                 nuri_button3.setBackgroundResource(R.drawable.button_background4)
                 unregisterForContextMenu(nuri_button1)
                 unregisterForContextMenu(nuri_button3)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledChoobap() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 11)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(nuri_button4)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 15)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button4.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(nuri_button4)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledNuristore() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 8)
+        cal.set(Calendar.MINUTE, 30)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(nuri_button6)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button6.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(nuri_button6)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledGlass() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 9)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(nuri_button7)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button7.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(nuri_button7)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledSweetu() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 10)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(nuri_button8)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 17)
+        cal.set(Calendar.MINUTE, 3)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button8.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(nuri_button8)
             }
         }, cal.time)
     }

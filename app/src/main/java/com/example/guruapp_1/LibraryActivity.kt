@@ -1,25 +1,93 @@
 package com.example.guruapp_1
 
+import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
 import android.view.MenuItem
 import android.view.View
+import kotlinx.android.synthetic.main.activity_anniversary50th.*
 import kotlinx.android.synthetic.main.activity_library.*
+import java.util.*
 
 class LibraryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_library)
-        registerForContextMenu(lib_button1)
-        registerForContextMenu(lib_button2)
-        registerForContextMenu(lib_button3)
-        registerForContextMenu(lib_button4)
-        registerForContextMenu(lib_button5)
-        registerForContextMenu(lib_button6)
-        registerForContextMenu(lib_button7)
-        registerForContextMenu(lib_button8)
-        registerForContextMenu(lib_button9)
+
+        disabledJaryosil()
+        disabledFloor1()
+    }
+
+    private fun disabledJaryosil() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 9)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(lib_button1)
+                registerForContextMenu(lib_button2)
+                registerForContextMenu(lib_button3)
+                registerForContextMenu(lib_button4)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 20)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                lib_button1.setBackgroundResource(R.drawable.button_background4)
+                lib_button2.setBackgroundResource(R.drawable.button_background4)
+                lib_button3.setBackgroundResource(R.drawable.button_background4)
+                lib_button4.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(lib_button1)
+                unregisterForContextMenu(lib_button2)
+                unregisterForContextMenu(lib_button3)
+                unregisterForContextMenu(lib_button4)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledFloor1() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 8)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(lib_button5)
+                registerForContextMenu(lib_button6)
+                registerForContextMenu(lib_button7)
+                registerForContextMenu(lib_button8)
+                registerForContextMenu(lib_button9)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 23)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                lib_button5.setBackgroundResource(R.drawable.button_background4)
+                lib_button6.setBackgroundResource(R.drawable.button_background4)
+                lib_button7.setBackgroundResource(R.drawable.button_background4)
+                lib_button8.setBackgroundResource(R.drawable.button_background4)
+                lib_button9.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(lib_button5)
+                unregisterForContextMenu(lib_button6)
+                unregisterForContextMenu(lib_button7)
+                unregisterForContextMenu(lib_button8)
+                unregisterForContextMenu(lib_button9)
+            }
+        }, cal.time)
     }
 
     override fun onCreateContextMenu(
