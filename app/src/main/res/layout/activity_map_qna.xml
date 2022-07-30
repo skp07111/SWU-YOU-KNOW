@@ -17,7 +17,7 @@
         android:fontFamily="@font/font_button"
         android:text="이메일로 문의하기"
         android:textSize="20dp"
-        android:textColor="#FF541F"
+        android:textColor="@color/main_red"
         android:gravity="center"
         android:background="@drawable/tv_stroke_rect"
         android:clickable="true"
