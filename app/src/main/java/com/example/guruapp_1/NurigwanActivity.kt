@@ -57,57 +57,97 @@ class NurigwanActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        registerForContextMenu(nuri_button1)
         registerForContextMenu(nuri_button2)
-        registerForContextMenu(nuri_button3)
         registerForContextMenu(nuri_button4)
         registerForContextMenu(nuri_button5)
         registerForContextMenu(nuri_button6)
         registerForContextMenu(nuri_button7)
         registerForContextMenu(nuri_button8)
         registerForContextMenu(nuri_button9)
-        registerForContextMenu(nuri_button12)
-        registerForContextMenu(nuri_button13)
-        registerForContextMenu(nuri_button14)
+
+        disabledCafe()
         disabledGusia()
+        disabledEtang()
+
     }
 
-    private fun disabledGusia() {
+    private fun disabledCafe() {
         val cal = Calendar.getInstance()
-        cal.set(Calendar.HOUR_OF_DAY, 19)
+        cal.set(Calendar.HOUR_OF_DAY, 8)
         cal.set(Calendar.MINUTE, 0)
         cal.set(Calendar.SECOND, 0)
 
         val timer = Timer()
         timer.schedule(object : TimerTask() {
             override fun run() {
-                nuri_button12.setBackgroundResource(R.drawable.button_background4)
-                nuri_button13.setBackgroundResource(R.drawable.button_background4)
-                nuri_button12.setOnClickListener() {
-                    false
-                }
-                nuri_button13.setOnClickListener() {
-                    false
-                }
-                unregisterForContextMenu(nuri_button12)
-                unregisterForContextMenu(nuri_button13)
+                registerForContextMenu(nuri_button1)
+                registerForContextMenu(nuri_button3)
             }
         }, cal.time)
 
-        cal.set(Calendar.HOUR_OF_DAY, 10)
+        cal.set(Calendar.HOUR_OF_DAY, 18)
         cal.set(Calendar.MINUTE, 0)
         cal.set(Calendar.SECOND, 0)
 
         timer.schedule(object : TimerTask() {
             override fun run() {
-                nuri_button12.setOnClickListener() {
-                    true
-                }
-                nuri_button13.setOnClickListener() {
-                    true
-                }
+                nuri_button1.setBackgroundResource(R.drawable.button_background4)
+                nuri_button3.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(nuri_button1)
+                unregisterForContextMenu(nuri_button3)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledGusia() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 10)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
                 registerForContextMenu(nuri_button12)
                 registerForContextMenu(nuri_button13)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 19)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button12.setBackgroundResource(R.drawable.button_background4)
+                nuri_button13.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(nuri_button12)
+                unregisterForContextMenu(nuri_button13)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledEtang() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 10)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(nuri_button14)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 17)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                nuri_button14.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(nuri_button14)
             }
         }, cal.time)
     }

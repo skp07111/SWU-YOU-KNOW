@@ -11,6 +11,7 @@ class Anniversary50th2Activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anniversary50th2)
+
         registerForContextMenu(fifty2_button1)
         registerForContextMenu(fifty2_button2)
         registerForContextMenu(fifty2_button3)

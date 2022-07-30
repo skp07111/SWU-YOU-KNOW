@@ -14,7 +14,33 @@ class JoyegwanActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_joyegwan)
-        registerForContextMenu(joye_button1)
+
+        disabledHwabang()
+    }
+
+    private fun disabledHwabang() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 8)
+        cal.set(Calendar.MINUTE, 30)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(joye_button1)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 17)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                joye_button1.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(joye_button1)
+            }
+        }, cal.time)
     }
 
     override fun onCreateContextMenu(
@@ -31,37 +57,6 @@ class JoyegwanActivity : AppCompatActivity() {
             }
         }
         disabledHwabang()
-    }
-
-    private fun disabledHwabang() {
-        val cal = Calendar.getInstance()
-        cal.set(Calendar.HOUR_OF_DAY, 17)
-        cal.set(Calendar.MINUTE, 30)
-        cal.set(Calendar.SECOND, 0)
-
-        val timer = Timer()
-        timer.schedule(object : TimerTask() {
-            override fun run() {
-                joye_button1.setBackgroundResource(R.drawable.button_background4)
-                joye_button1.setOnClickListener() {
-                    false
-                }
-                unregisterForContextMenu(joye_button1)
-            }
-        }, cal.time)
-
-        cal.set(Calendar.HOUR_OF_DAY, 8)
-        cal.set(Calendar.MINUTE, 30)
-        cal.set(Calendar.SECOND, 0)
-
-        timer.schedule(object : TimerTask() {
-            override fun run() {
-                joye_button1.setOnClickListener() {
-                    true
-                }
-                registerForContextMenu(joye_button1)
-            }
-        }, cal.time)
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {

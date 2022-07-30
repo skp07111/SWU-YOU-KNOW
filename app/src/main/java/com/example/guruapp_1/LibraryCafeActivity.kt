@@ -19,10 +19,8 @@ import java.util.*
 
 class LibraryCafeActivity : AppCompatActivity() {
 
-    lateinit var grazieMenu: Button
-
     var grazie: String = "grazie"
-    var resetNum: Int = 3
+    lateinit var grazieMenu: Button
     lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
 
@@ -52,31 +50,25 @@ class LibraryCafeActivity : AppCompatActivity() {
 
        private fun disabledGrazie() {
             val cal = Calendar.getInstance()
-                cal.set(Calendar.HOUR_OF_DAY, 18)
+                cal.set(Calendar.HOUR_OF_DAY, 8)
                 cal.set(Calendar.MINUTE, 30)
                 cal.set(Calendar.SECOND, 0)
 
             val timer = Timer()
             timer.schedule(object : TimerTask() {
                 override fun run() {
-                    libcafe_button1.setBackgroundResource(R.drawable.button_background4)
-                    libcafe_button1.setOnClickListener() {
-                        false
-                    }
-                    unregisterForContextMenu(libcafe_button1)
+                    registerForContextMenu(libcafe_button1)
                 }
             }, cal.time)
 
-           cal.set(Calendar.HOUR_OF_DAY, 8)
+           cal.set(Calendar.HOUR_OF_DAY, 18)
            cal.set(Calendar.MINUTE, 30)
            cal.set(Calendar.SECOND, 0)
 
            timer.schedule(object : TimerTask() {
                override fun run() {
-                   libcafe_button1.setOnClickListener() {
-                       true
-                   }
-                   registerForContextMenu(libcafe_button1)
+                   libcafe_button1.setBackgroundResource(R.drawable.button_background4)
+                   unregisterForContextMenu(libcafe_button1)
                }
            }, cal.time)
         }
@@ -103,9 +95,16 @@ class LibraryCafeActivity : AppCompatActivity() {
                     libcafe_button1.setBackgroundResource(R.drawable.button_background1)
                     sqlDB = myHelper.writableDatabase
                     sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + grazie + "';")
-//                    sqlDB = myHelper.readableDatabase
+//                    var resetNum: Int
 //                    var cursor: Cursor
-//                    cursor = sqlDB.rawQuery("SELECT gNumber FROM guruTBL WHERE gName = '" + grazie + "';")
+//                    cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + grazie + "';",null)
+//
+//                    while (cursor.moveToNext()) {
+//                        resetNum = cursor.getInt(1)
+//                        if (resetNum == 1) libcafe_button1.setBackgroundResource(R.drawable.button_background1)
+//                        else if (resetNum == 2) libcafe_button1.setBackgroundResource(R.drawable.button_background2)
+//                        else if (resetNum == 3) libcafe_button1.setBackgroundResource(R.drawable.button_background3)
+//                    }
 
                     Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
                 }
@@ -126,17 +125,16 @@ class LibraryCafeActivity : AppCompatActivity() {
         }
 
 //        private fun setBtnColor() {
+//            var resetNum: Int = 3
 //            sqlDB = myHelper.readableDatabase
 //            var cursor: Cursor
-//            var bgNum: Int
 //            cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + grazie + "';",null)
 //
-//            if(cursor.moveToNext()) {
-//                bgNum = cursor.getInt(0)
-//                bgNum = cursor.getInt(1)
-//                if (bgNum == 1) libcafe_button1.setBackgroundResource(R.drawable.button_background1)
-//                else if (bgNum == 2) libcafe_button1.setBackgroundResource(R.drawable.button_background2)
-//                else if (bgNum == 3) libcafe_button1.setBackgroundResource(R.drawable.button_background3)
+//            if (cursor.moveToNext()) {
+//                resetNum = cursor.getInt(cursor.getColumnIndexOrThrow("gNumber"))
+//                if (resetNum == 1) libcafe_button1.setBackgroundResource(R.drawable.button_background1)
+//                else if (resetNum == 2) libcafe_button1.setBackgroundResource(R.drawable.button_background2)
+//                else if (resetNum == 3) libcafe_button1.setBackgroundResource(R.drawable.button_background3)
 //            }
 //        }
 
