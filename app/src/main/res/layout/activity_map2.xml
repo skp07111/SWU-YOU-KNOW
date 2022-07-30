@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#799E58">
 
-    // 캠퍼스맵 배경
+    // 학교공간 메뉴 캠퍼스맵 배경
     <ImageView
         android:id="@+id/imageViewCampus_2"
         android:layout_width="wrap_content"
@@ -15,6 +15,7 @@
         android:layout_weight="1"
         app:srcCompat="@drawable/minimap_campus" />
 
+    // 50주년 기념관
     <ImageButton
         android:id="@+id/imageButton50_2"
         android:layout_width="wrap_content"
@@ -30,6 +31,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_50" />
 
+    // 기독교교육관
     <ImageButton
         android:id="@+id/imageButtonKidok_2"
         android:layout_width="69dp"
@@ -45,6 +47,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_kidok" />
 
+    // 인문사회관
     <ImageButton
         android:id="@+id/imageButtonInsa_2"
         android:layout_width="100dp"
@@ -60,6 +63,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_insa" />
 
+    // 중앙도서관
     <ImageButton
         android:id="@+id/imageButtonLibrary_2"
         android:layout_width="wrap_content"
@@ -76,6 +80,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_library" />
 
+    // 학생누리관
     <ImageButton
         android:id="@+id/imageButtonNuri_2"
         android:layout_width="77dp"
@@ -92,6 +97,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_nuri" />
 
+    // 조형예술관
     <ImageButton
         android:id="@+id/imageButtonJoye_2"
         android:layout_width="wrap_content"
@@ -108,6 +114,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_joye" />
 
+    // 제2과학관
     <ImageButton
         android:id="@+id/imageButtonSci2_2"
         android:layout_width="87dp"
@@ -124,6 +131,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_science2" />
 
+    // 제1과학관
     <ImageButton
         android:id="@+id/imageButtonSci1_2"
         android:layout_width="117dp"
@@ -142,6 +150,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_science1" />
 
+    // 샬롬기숙사
     <ImageButton
         android:id="@+id/imageButtonShalom_2"
         android:layout_width="139dp"
@@ -160,6 +169,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_shalom" />
 
+    // 국제생활관
     <ImageButton
         android:id="@+id/imageButtonItn_2"
         android:layout_width="wrap_content"
@@ -178,6 +188,7 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_international" />
 
+    // 대강당
     <ImageButton
         android:id="@+id/imageButtonTgd_2"
         android:layout_width="123dp"
