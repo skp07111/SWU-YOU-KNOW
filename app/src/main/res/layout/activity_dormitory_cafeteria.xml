@@ -16,6 +16,7 @@
         android:layout_weight="1"
         android:layout_marginBottom="30dp"
         android:text="기숙사 식당"
+        android:fontFamily="@font/cafe24surround"
         android:textSize="24sp" />
 
     <TextView
@@ -26,6 +27,7 @@
         android:layout_marginBottom="30dp"
         android:layout_weight="1"
         android:text="운영시간 :"
+        android:fontFamily="@font/cafe24surround"
         android:textSize="14sp" />
 
     <LinearLayout
@@ -41,6 +43,7 @@
             android:layout_gravity="left"
             android:layout_marginBottom="10dp"
             android:text="금주의 식단"
+            android:fontFamily="@font/cafe24surround"
             android:textSize="14sp" />
 
         <ImageView
@@ -56,6 +59,7 @@
             android:layout_gravity="right"
             android:onClick="bt1"
             android:text="업로드"
+            android:fontFamily="@font/cafe24surround"
             android:textSize="8sp" />
 
     </LinearLayout>
@@ -79,6 +83,7 @@
                 android:layout_gravity="left"
                 android:layout_marginBottom="10dp"
                 android:text="오늘의 점심"
+                android:fontFamily="@font/cafe24surround"
                 android:textSize="14sp" />
 
             <ImageView
@@ -94,6 +99,7 @@
                 android:layout_gravity="right"
                 android:onClick="bt2"
                 android:text="업로드"
+                android:fontFamily="@font/cafe24surround"
                 android:textSize="8sp" />
 
 
@@ -113,6 +119,7 @@
                 android:layout_gravity="left"
                 android:layout_marginBottom="10dp"
                 android:text="오늘의 저녁"
+                android:fontFamily="@font/cafe24surround"
                 android:textSize="14sp" />
 
             <ImageView
@@ -128,6 +135,7 @@
                 android:layout_gravity="right"
                 android:onClick="bt3"
                 android:text="업로드"
+                android:fontFamily="@font/cafe24surround"
                 android:textSize="8sp" />
 
 

@@ -12,22 +12,26 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="60dp"
+        android:layout_marginBottom="50dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/staff_cafeteria_btn"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:layout_weight="1"
+            android:fontFamily="@font/cafe24surround"
+            android:background="@drawable/button_background5"
+            android:textSize="17sp"
             android:text="교직원" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_weight="1"
-            android:text="운영 정보">
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/cafe24surround"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="[점심]\n11:30 ~ 13:30">
 
         </TextView>
     </LinearLayout>
@@ -36,22 +40,25 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="60dp"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/dormitory_cafeteria_btn"
             android:layout_width="140dp"
             android:layout_height="140dp"
-            android:layout_weight="1"
+            android:fontFamily="@font/cafe24surround"
+            android:background="@drawable/button_background5"
+            android:textSize="17sp"
             android:text="기숙사" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="60dp"
-            android:layout_weight="1"
-            android:text="운영 정보">
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginLeft="40dp"
+            android:fontFamily="@font/cafe24surround"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="[점심]\n11:30 ~ 13:30\n\n[저녁]\n17:00 ~ 18:30\n\n[Break time]\n14:00 ~ 17:00">
 
         </TextView>
     </LinearLayout>
