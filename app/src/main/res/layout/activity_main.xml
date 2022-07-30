@@ -7,16 +7,29 @@
     tools:context=".MainActivity">
 
     <ImageButton
+        android:id="@+id/swu_spaces"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/swu_schoolbus"
+        app:layout_constraintTop_toBottomOf="@id/swu_store"
+        app:srcCompat="@drawable/logo_spaces" />
+
+    <ImageButton
         android:id="@+id/swu_cafeteria"
         android:layout_width="130dp"
         android:layout_height="130dp"
+        android:layout_marginTop="150dp"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
         app:layout_constraintBottom_toTopOf="@+id/swu_schoolbus"
         app:layout_constraintEnd_toStartOf="@+id/swu_store"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_cafeteria"
-        android:background="#00ffffff"
-        android:scaleType="fitStart" />
+        app:srcCompat="@drawable/logo_cafeteria" />
 
     <ImageButton
         android:id="@+id/swu_schoolbus"
@@ -31,29 +44,28 @@
         app:srcCompat="@drawable/logo_schoolbus" />
 
     <ImageButton
-        android:id="@+id/swu_spaces"
-        android:layout_width="130dp"
-        android:layout_height="130dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/swu_schoolbus"
-        app:layout_constraintTop_toBottomOf="@id/swu_store"
-        app:srcCompat="@drawable/logo_spaces"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"/>
-
-    <ImageButton
         android:id="@+id/swu_store"
         android:layout_width="130dp"
         android:layout_height="130dp"
+        android:layout_marginTop="150dp"
+        android:background="#00ffffff"
+        android:scaleType="fitStart"
         app:layout_constraintBottom_toTopOf="@+id/swu_spaces"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/swu_cafeteria"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo_store"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"/>
+        app:srcCompat="@drawable/logo_store" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/title_logo" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="#799E58">
 
+    // 캠퍼스 맵 배경
     <ImageView
         android:id="@+id/imageViewCampus"
         android:layout_width="wrap_content"
@@ -14,21 +15,23 @@
         android:layout_weight="1"
         app:srcCompat="@drawable/minimap_campus" />
 
+    // 50주년 기념관
     <ImageButton
         android:id="@+id/imageButton50"
-        android:layout_width="141dp"
-        android:layout_height="129dp"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="254dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="80dp"
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_50" />
 
+    // 기독교교육관
     <ImageButton
         android:id="@+id/imageButtonKidok"
         android:layout_width="wrap_content"
@@ -44,21 +47,23 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_kidok" />
 
+    // 인문사회관
     <ImageButton
         android:id="@+id/imageButtonInsa"
-        android:layout_width="wrap_content"
-        android:layout_height="94dp"
+        android:layout_width="99dp"
+        android:layout_height="97dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="251dp"
-        android:layout_marginEnd="35dp"
-        android:layout_marginBottom="204dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="202dp"
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_insa" />
 
+    // 중앙도서관
     <ImageButton
         android:id="@+id/imageButtonLibrary"
         android:layout_width="wrap_content"
@@ -75,38 +80,41 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_library" />
 
+    // 학생누리관
     <ImageButton
         android:id="@+id/imageButtonNuri"
-        android:layout_width="wrap_content"
-        android:layout_height="56dp"
+        android:layout_width="76dp"
+        android:layout_height="58dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="254dp"
-        android:layout_marginEnd="63dp"
-        android:layout_marginBottom="344dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="343dp"
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_nuri" />
 
+    // 조형예술관
     <ImageButton
         android:id="@+id/imageButtonJoye"
-        android:layout_width="wrap_content"
-        android:layout_height="81dp"
+        android:layout_width="78dp"
+        android:layout_height="82dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="330dp"
-        android:layout_marginEnd="-59dp"
-        android:layout_marginBottom="295dp"
+        android:layout_marginStart="331dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginBottom="294dp"
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_joye" />
 
+    // 제2과학관
     <ImageButton
         android:id="@+id/imageButtonSci2"
         android:layout_width="wrap_content"
@@ -115,18 +123,19 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="316dp"
-        android:layout_marginEnd="-45dp"
-        android:layout_marginBottom="376dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="377dp"
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_science2" />
 
+    // 제1과학관
     <ImageButton
         android:id="@+id/imageButtonSci1"
-        android:layout_width="165dp"
-        android:layout_height="98dp"
+        android:layout_width="119dp"
+        android:layout_height="100dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -134,17 +143,18 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="259dp"
         android:layout_marginTop="62dp"
-        android:layout_marginEnd="-13dp"
-        android:layout_marginBottom="443dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="441dp"
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_science1" />
 
+    // 샬롬기숙사
     <ImageButton
         android:id="@+id/imageButtonShalom"
-        android:layout_width="165dp"
-        android:layout_height="88dp"
+        android:layout_width="140dp"
+        android:layout_height="89dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -152,17 +162,18 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="115dp"
         android:layout_marginTop="36dp"
-        android:layout_marginEnd="131dp"
-        android:layout_marginBottom="479dp"
+        android:layout_marginEnd="156dp"
+        android:layout_marginBottom="478dp"
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_shalom" />
 
+    // 국제생활관
     <ImageButton
         android:id="@+id/imageButtonItn"
-        android:layout_width="87dp"
-        android:layout_height="53dp"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -171,15 +182,16 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="88dp"
         android:layout_marginEnd="283dp"
-        android:layout_marginBottom="462dp"
+        android:layout_marginBottom="468dp"
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_international" />
 
+    // 대강당
     <ImageButton
         android:id="@+id/imageButtonTgd"
-        android:layout_width="192dp"
+        android:layout_width="123dp"
         android:layout_height="88dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -188,7 +200,7 @@
         android:layout_centerInParent="true"
         android:layout_marginStart="36dp"
         android:layout_marginTop="237dp"
-        android:layout_marginEnd="183dp"
+        android:layout_marginEnd="252dp"
         android:layout_marginBottom="278dp"
         android:layout_weight="1"
         android:background="#00ffffff"
