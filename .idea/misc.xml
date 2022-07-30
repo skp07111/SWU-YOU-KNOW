@@ -144,7 +144,13 @@
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_touslesjours.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_wooribank.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.21" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/drawable/tv_solid_rect.xml" value="0.1" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/drawable/tv_stroke_rect.xml" value="0.1" />
         <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_bus_qna.xml" value="0.23697916666666666" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_bus_vacation.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_map_qna.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/menu/map_menu_home.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/menu/map_menu_qna.xml" value="0.2484375" />
         <entry key="..\:/guru/App/app/src/main/res/layout/activity_main_menu.xml" value="0.4" />
       </map>
     </option>

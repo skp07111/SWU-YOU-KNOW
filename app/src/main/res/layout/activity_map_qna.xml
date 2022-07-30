@@ -8,7 +8,7 @@
     android:orientation="horizontal"
     app:layoutDescription="@xml/activity_bus_qna_scene"
     android:layout_gravity="center"
-    tools:context=".QnaActivity">
+    tools:context=".MapQnaActivity">
 
     <TextView
         android:id="@+id/btnemail"
