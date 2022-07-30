@@ -18,7 +18,7 @@
         android:text="교직원 식당"
         android:textColor="@color/cardview_dark_background"
         android:fontFamily="@font/scdream7"
-        android:textSize="24sp" />
+        android:textSize="25sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +35,7 @@
             android:text="금주의 식단"
             android:textColor="@color/cardview_dark_background"
             android:fontFamily="@font/cafe24surround"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/staffImageView1"
@@ -70,7 +70,7 @@
             android:text="오늘의 점심 사진"
             android:textColor="@color/cardview_dark_background"
             android:fontFamily="@font/cafe24surround"
-            android:textSize="14sp" />
+            android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/staffImageView2"
