@@ -56,10 +56,11 @@ class StaffCafeteria : AppCompatActivity() {
 
     }
 
-    private fun clickEvent(view: View, pos: Int) {
+    private fun clickEvent(view: View, pos: Int) { // ImageView 클릭 시 실행되도록 구성
+
         val intent = Intent(this, ImageActivity::class.java)
         intent.putExtra("pos", pos)
-        val opt = ActivityOptions.makeSceneTransitionAnimation(this, view, "imgTrans")
+        val opt = ActivityOptions.makeSceneTransitionAnimation(this, view, "imgTrans") // 파라미터 3번 째 String 값은 layout의 ImageView의 추가된 transitionName 값으로 이는 전환 될 Activity의 ImageView에도 똑같이 설정
         startActivity(intent, opt.toBundle())
     }
 

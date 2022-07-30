@@ -21,7 +21,7 @@ class ImageActivity2 : AppCompatActivity() {
 
 
 
-        val img = when(intent.getIntExtra("pos", 1)) {
+        val img = when(intent.getIntExtra("pos", 1)) { // intent로 넘어온 pos값을 사용하여 보여줄 Image를 지정
             1 -> path1
             2 -> path2
             else -> path3
@@ -29,7 +29,7 @@ class ImageActivity2 : AppCompatActivity() {
         image_full.setImageBitmap(img)
 
         image_full.setOnClickListener {
-            supportFinishAfterTransition()
+            supportFinishAfterTransition() // 클릭 시 본래 Finish() 역할을 하는 supportFinishAfterTransition()을 사용하여 마찬가지로 애니메이션을 주며 원래 엑티비티로 돌아감
         }
 
     }
