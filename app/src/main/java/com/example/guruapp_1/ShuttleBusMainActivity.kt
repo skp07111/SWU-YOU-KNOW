@@ -67,6 +67,8 @@ class ShuttleBusMainActivity : AppCompatActivity() {
 
     }
 
+    // 특정 시간이나 날짜에 동작하게 하기 위해 TimerTask를 만들어 사용
+
     private fun highlight1() { // ~ 9시 30분
 
 
