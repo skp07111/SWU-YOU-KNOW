@@ -1,6 +1,7 @@
 package com.example.guruapp_1
 
 import android.content.Intent
+import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
@@ -8,6 +9,7 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_anniversary50th.*
+import java.util.*
 
 class Anniversary50thActivity : AppCompatActivity() {
 
@@ -30,12 +32,162 @@ class Anniversary50thActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        registerForContextMenu(fifty_button1)
-        registerForContextMenu(fifty_button2)
-        registerForContextMenu(fifty_button3)
-        registerForContextMenu(fifty_button4)
-        registerForContextMenu(fifty_button5)
-        registerForContextMenu(fifty_button6)
+        disabledStaff()
+        disabledTouslesjours()
+        disabledOnigiri()
+        disabledGamtan()
+        disabledCU()
+        disabledCopyworks()
+    }
+
+    private fun disabledStaff() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 11)
+        cal.set(Calendar.MINUTE, 3)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(fifty_button1)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 13)
+        cal.set(Calendar.MINUTE, 3)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                fifty_button1.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(fifty_button1)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledTouslesjours() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 7)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(fifty_button2)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                fifty_button2.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(fifty_button2)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledOnigiri() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 11)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(fifty_button3)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                fifty_button3.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(fifty_button3)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledGamtan() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 10)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(fifty_button4)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                fifty_button4.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(fifty_button4)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledCU() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 9)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(fifty_button5)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 0)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                fifty_button5.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(fifty_button5)
+            }
+        }, cal.time)
+    }
+
+    private fun disabledCopyworks() {
+        val cal = Calendar.getInstance()
+        cal.set(Calendar.HOUR_OF_DAY, 8)
+        cal.set(Calendar.MINUTE, 3)
+        cal.set(Calendar.SECOND, 0)
+
+        val timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                registerForContextMenu(fifty_button6)
+            }
+        }, cal.time)
+
+        cal.set(Calendar.HOUR_OF_DAY, 18)
+        cal.set(Calendar.MINUTE, 3)
+        cal.set(Calendar.SECOND, 0)
+
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+                fifty_button6.setBackgroundResource(R.drawable.button_background4)
+                unregisterForContextMenu(fifty_button6)
+            }
+        }, cal.time)
     }
 
     override fun onCreateContextMenu(
@@ -72,6 +224,7 @@ class Anniversary50thActivity : AppCompatActivity() {
             }
         }
     }
+
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
