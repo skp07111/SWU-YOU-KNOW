@@ -20,6 +20,7 @@ import java.util.*
 class LibraryCafeActivity : AppCompatActivity() {
 
     var grazie: String = "grazie"
+    var resetNum: Int = 3
     lateinit var grazieMenu: Button
     lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
@@ -40,12 +41,12 @@ class LibraryCafeActivity : AppCompatActivity() {
 //            Toast.makeText(applicationContext, "입력됨", Toast.LENGTH_SHORT).show()
             var intent = Intent(this, GrazieActivity::class.java)
             startActivity(intent)
+
         }
 
         registerForContextMenu(libcafe_button1)
 
         disabledGrazie()
-//        setBtnColor()
     }
 
        private fun disabledGrazie() {
@@ -95,17 +96,6 @@ class LibraryCafeActivity : AppCompatActivity() {
                     libcafe_button1.setBackgroundResource(R.drawable.button_background1)
                     sqlDB = myHelper.writableDatabase
                     sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + grazie + "';")
-//                    var resetNum: Int
-//                    var cursor: Cursor
-//                    cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + grazie + "';",null)
-//
-//                    while (cursor.moveToNext()) {
-//                        resetNum = cursor.getInt(1)
-//                        if (resetNum == 1) libcafe_button1.setBackgroundResource(R.drawable.button_background1)
-//                        else if (resetNum == 2) libcafe_button1.setBackgroundResource(R.drawable.button_background2)
-//                        else if (resetNum == 3) libcafe_button1.setBackgroundResource(R.drawable.button_background3)
-//                    }
-
                     Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
                 }
                 R.id.select2_libcafe -> {

@@ -10,10 +10,10 @@ import android.view.View
 import android.widget.TextView
 
 
-class QnaActivity : AppCompatActivity() {
+class MapQnaActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_bus_qna)
+        setContentView(R.layout.activity_map_qna)
 
         val email = findViewById<View>(R.id.btnemail) as TextView
         val call = findViewById<View>(R.id.btncall) as TextView
@@ -35,26 +35,5 @@ class QnaActivity : AppCompatActivity() {
                 startActivity(call)
             }
         }
-    }
-
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.bus_menu_qna, menu)
-        return true
-    }
-
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item?.itemId) {
-            R.id.action_home -> {
-                val intent = Intent(this, ShuttleBusMainActivity::class.java)
-                startActivity(intent)
-                return true
-            }
-            R.id.action_vacation -> {
-                val intent = Intent(this, VacationActivity::class.java)
-                startActivity(intent)
-                return true
-            }
-        }
-        return super.onOptionsItemSelected(item)
     }
 }
