@@ -4,12 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 
 class MainActivity : AppCompatActivity() {
     lateinit var storeMain: ImageButton
     lateinit var ShuttleBusMain : ImageButton
     lateinit var spaceMain: ImageButton
     lateinit var cafeteriaMain : ImageButton
+    lateinit var titleLogo : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         ShuttleBusMain = findViewById<ImageButton>(R.id.swu_schoolbus)
         spaceMain = findViewById<ImageButton>(R.id.swu_spaces)
         cafeteriaMain = findViewById<ImageButton>(R.id.swu_cafeteria)
+        titleLogo = findViewById<ImageView>(R.id.titleLogo)
 
         storeMain.setOnClickListener() {
             var intent = Intent(this, MapActivity::class.java)
