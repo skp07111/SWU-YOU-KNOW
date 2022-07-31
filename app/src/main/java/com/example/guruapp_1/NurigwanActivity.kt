@@ -36,6 +36,7 @@ class NurigwanActivity : AppCompatActivity() {
     lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
 
+    lateinit var beetleMenu: Button
     lateinit var quiznosMenu: Button
     lateinit var gaeunMenu: Button
     lateinit var choobapMenu: Button
@@ -137,6 +138,8 @@ class NurigwanActivity : AppCompatActivity() {
             else if (resetNum == 3) nuri_button14.setBackgroundResource(R.drawable.button_background3)
         }
 
+        // 비틀쥬스 버튼
+        var beetleMenu = findViewById<Button>(R.id.nuri_button1)
         // 퀴즈노스 버튼
         var quiznosMenu = findViewById<Button>(R.id.nuri_button2)
         // 가은 버튼
@@ -150,6 +153,11 @@ class NurigwanActivity : AppCompatActivity() {
         // 에땅 버튼
         var etangMenu = findViewById<Button>(R.id.nuri_button14)
 
+        // 비틀쥬스 버튼(short click) 선택 시 비틀쥬스 메뉴(BeetlejuiceActivity)로 전환
+        beetleMenu.setOnClickListener() {
+            var intent = Intent(this, BeetlejuiceActivity::class.java)
+            startActivity(intent)
+        }
         // 퀴즈노스 버튼(short click) 선택 시 퀴즈노스 메뉴(QuiznosActivity)로 전환
         quiznosMenu.setOnClickListener() {
             var intent = Intent(this, QuiznosActivity::class.java)

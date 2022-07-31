@@ -10,6 +10,7 @@ import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_library.*
 import kotlinx.android.synthetic.main.activity_shalom.*
@@ -23,6 +24,8 @@ class ShalomActivity : AppCompatActivity() {
     var resetNum: Int = 3
     lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
+
+    lateinit var shalomMenu: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +49,15 @@ class ShalomActivity : AppCompatActivity() {
             if (resetNum == 1) shalom_button2.setBackgroundResource(R.drawable.button_background1)
             else if (resetNum == 2) shalom_button2.setBackgroundResource(R.drawable.button_background2)
             else if (resetNum == 3) shalom_button2.setBackgroundResource(R.drawable.button_background3)
+        }
+
+        // 기숙사식당 버튼
+        shalomMenu = findViewById<Button>(R.id.fifty_button1)
+
+        // 기숙사식당 버튼(short click) 선택 시 기숙사 식당 액티비티(DormitoryCafeteria)로 전환
+        shalomMenu.setOnClickListener() {
+            var intent = Intent(this, DormitoryCafeteria::class.java)
+            startActivity(intent)
         }
 
         disabledCafeteria() // 기숙사식당 버튼(long click) 활성화/비활성화 함수

@@ -29,6 +29,7 @@ class Anniversary50thActivity : AppCompatActivity() {
     lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
 
+    lateinit var staffMenu: Button
     lateinit var onigiriMenu: Button
     lateinit var gamtanMenu: Button
 
@@ -84,11 +85,18 @@ class Anniversary50thActivity : AppCompatActivity() {
             else if (resetNum == 3) fifty_button6.setBackgroundResource(R.drawable.button_background3)
         }
 
+        // 교직원식당 버튼
+        staffMenu = findViewById<Button>(R.id.fifty_button1)
         // 오니기리와이규동 버튼
         onigiriMenu = findViewById<Button>(R.id.fifty_button3)
         // 감탄떡볶이 버튼
         gamtanMenu = findViewById<Button>(R.id.fifty_button4)
 
+        // 교직원식당 버튼(short click) 선택 시 교직원 식당 액티비티(StaffCafeteria)로 전환
+        staffMenu.setOnClickListener() {
+            var intent = Intent(this, StaffCafeteria::class.java)
+            startActivity(intent)
+        }
         // 오니기리와이규동 버튼(short click) 선택 시 오니기리와이규동 메뉴(OnigiriActivity)로 전환
         onigiriMenu.setOnClickListener() {
             var intent = Intent(this, OnigiriActivity::class.java)
