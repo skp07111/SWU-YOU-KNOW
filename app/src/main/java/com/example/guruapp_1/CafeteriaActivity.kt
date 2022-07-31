@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
+// 식당 선택 화면(교직원 식당 or 기숙사 식당)
 class CafeteriaActivity : AppCompatActivity() {
 
     lateinit var staffMain: Button

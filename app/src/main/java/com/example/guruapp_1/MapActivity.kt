@@ -7,6 +7,7 @@ import android.view.MenuItem
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
+// 교내상점 맵
 class MapActivity : AppCompatActivity() {
 
     lateinit var anniMap: ImageButton
@@ -59,11 +60,13 @@ class MapActivity : AppCompatActivity() {
         }
     }
 
+    // 문의사항 메뉴(map_menu_qna) 연결
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.map_menu_qna, menu)
         return true
     }
 
+    // 문의사항(action_qna) 선택 시 MapQnaActivity로 전환
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item?.itemId) {
             R.id.action_qna -> {

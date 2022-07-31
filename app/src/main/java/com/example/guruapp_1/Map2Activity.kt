@@ -8,6 +8,7 @@ import android.view.MenuItem
 import android.widget.ImageButton
 import androidx.appcompat.app.AppCompatActivity
 
+// 학교공간 맵
 class Map2Activity : AppCompatActivity() {
 
     lateinit var anni2Map: ImageButton
@@ -66,11 +67,13 @@ class Map2Activity : AppCompatActivity() {
         }
     }
 
+    // 문의사항 메뉴(map_menu_qna) 연결
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.map_menu_qna, menu)
         return true
     }
 
+    // 문의사항(action_qna) 선택 시 MapQnaActivity로 전환
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when(item?.itemId) {
             R.id.action_qna -> {
@@ -81,5 +84,4 @@ class Map2Activity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
-
 }
