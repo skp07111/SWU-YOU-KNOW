@@ -4,8 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_map.xml" value="0.4" />
-        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_map2.xml" value="0.24871794871794872" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_map.xml" value="0.2526041666666667" />
         <entry key="..\:/Users/green/AndroidStudioProjects/App/app/src/main/res/layout/activity_anniversary50th.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/green/AndroidStudioProjects/App/app/src/main/res/layout/activity_anniversary50th2.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/green/AndroidStudioProjects/App/app/src/main/res/layout/activity_auditorium.xml" value="0.25364583333333335" />
@@ -50,9 +49,11 @@
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_anniversary50th2.xml" value="0.264" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_auditorium.xml" value="0.264" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_bus_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_bus_qna.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_cafeteria.xml" value="0.16614583333333333" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_dormitory_cafeteria.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_fiftieth_anniversary.xml" value="0.36614583333333334" />
+        <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_image.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_insagwan.xml" value="0.4" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_insagwan2.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/layout/activity_joyegwan.xml" value="0.25" />
@@ -144,24 +145,18 @@
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_touslesjours.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AndroidStudioProjects/GuruApp_1/app/src/main/res/menu/popup_menu_wooribank.xml" value="0.36614583333333334" />
         <entry key="..\:/Users/green/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_list_item_1.xml" value="0.21" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/activity_bus_qna.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/activity_joyegwan.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/activity_joyegwan2.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/activity_science1.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/bettle_menu.xml" value="0.4" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/chegodang_menu.xml" value="0.4" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/chubab_menu.xml" value="0.4" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/ettang_menu.xml" value="0.4" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/gaeun_menu.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/gamtan_menu.xml" value="0.264" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/grazie_menu.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/mangeun_menu.xml" value="0.536" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/onigili_menu.xml" value="0.4" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/pandorocy_menu.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/layout/quiznos_menu.xml" value="0.264" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/menu/bus_menu_main.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/menu/bus_menu_qna.xml" value="0.25364583333333335" />
-        <entry key="..\:/Users/userjuri/AndroidStudioProjects/App/app/src/main/res/menu/popup_menu_anni_1.xml" value="0.25364583333333335" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/drawable-v24/button_background5.xml" value="0.255" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/drawable/tv_stroke_rect.xml" value="0.1335" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_bus_main.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_bus_qna.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_bus_vacation.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_cafeteria.xml" value="0.264" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_dormitory_cafeteria.xml" value="0.264" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_image.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_image2.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_joyegwan.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_librarycafe.xml" value="0.24947916666666667" />
+        <entry key="..\:/Users/juwon/AndroidStudioProjects/App/app/src/main/res/layout/activity_staff_cafeteria.xml" value="0.1" />
         <entry key="..\:/guru/App/app/src/main/res/layout/activity_main_menu.xml" value="0.4" />
       </map>
     </option>

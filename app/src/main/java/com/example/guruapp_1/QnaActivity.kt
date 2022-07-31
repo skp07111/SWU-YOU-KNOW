@@ -18,7 +18,7 @@ class QnaActivity : AppCompatActivity() {
         val email = findViewById<View>(R.id.btnemail) as TextView
         val call = findViewById<View>(R.id.btncall) as TextView
 
-        email.setOnClickListener {
+        email.setOnClickListener { // 이메일 보내기
             val email = Intent(Intent.ACTION_SEND)
             email.type = "plain/text"
             val address = arrayOf("juwon_0715@naver.com")
@@ -28,7 +28,7 @@ class QnaActivity : AppCompatActivity() {
             startActivity(email)
         }
 
-        call.setOnClickListener {
+        call.setOnClickListener { // 전화 걸기
             val call = Intent(Intent.ACTION_DIAL)
             call.data = Uri.parse("tel:01011111111")
             if(intent.resolveActivity(packageManager) != null) {
