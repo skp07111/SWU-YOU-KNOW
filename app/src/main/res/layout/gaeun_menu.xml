@@ -399,12 +399,14 @@
         android:id="@+id/gaeun_plus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:fontFamily="@font/font_text"
         android:text="샷,휘핑,얼음컵 : 0.5 / 사이즈업 : 0.9\n시럽추가 : 0.5"
         android:textSize="12sp"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="197dp"
-        tools:layout_editor_absoluteY="557dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
