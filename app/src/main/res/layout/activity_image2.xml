@@ -6,6 +6,9 @@
     android:layout_height="match_parent"
     tools:context=".ImageActivity2">
 
+    <!--# ImageView 1개로 구성되며 이는 Main Activity에서 ImageView 클릭 시 전환되어 보여줄 화면
+    # Main Activity의 ImageView와 마찬가지로 transitionName 값을 imgTrans로 동일한 값을 갖음-->
+
     <ImageView
         android:id="@+id/image_full"
         android:layout_width="match_parent"

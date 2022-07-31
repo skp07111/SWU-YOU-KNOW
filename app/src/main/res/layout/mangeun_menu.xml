@@ -10,7 +10,7 @@
         android:layout_width="151dp"
         android:layout_height="51dp"
         android:layout_marginStart="28dp"
-        android:text="전주식콩나물국밥"
+        android:text="전주식콩나물국밥\n6500원"
         app:layout_constraintStart_toEndOf="@+id/manguntext1"
         app:layout_constraintTop_toBottomOf="@+id/manguntext10" />
 
@@ -28,7 +28,7 @@
         android:layout_width="151dp"
         android:layout_height="51dp"
         android:layout_marginStart="28dp"
-        android:text="계란후라이추가"
+        android:text="계란후라이추가\n1500원"
         app:layout_constraintStart_toEndOf="@+id/manguntext1"
         app:layout_constraintTop_toBottomOf="@+id/manguntext12" />
 
@@ -37,7 +37,7 @@
         android:layout_width="151dp"
         android:layout_height="51dp"
         android:layout_marginStart="28dp"
-        android:text="곱빼기추가"
+        android:text="곱빼기추가\n1500원"
         app:layout_constraintStart_toEndOf="@+id/manguntext1"
         app:layout_constraintTop_toBottomOf="@+id/manguntext13" />
 
@@ -82,7 +82,7 @@
         android:layout_width="151dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="함박크림리조또"
+        android:text="함박크림리조또\n6900원"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/manguntext7" />
 
@@ -91,7 +91,7 @@
         android:layout_width="151dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="함박토마토리조또"
+        android:text="함박토마토리조또\n6900원"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/manguntext8" />
 
@@ -109,7 +109,7 @@
         android:layout_width="151dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="해물짜장덮밥"
+        android:text="해물짜장덮밥\n6500원"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/manguntext6" />
 
@@ -118,7 +118,7 @@
         android:layout_width="151dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="간장닭갈비덮밥"
+        android:text="간장닭갈비덮밥\n6500원"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/manguntext3" />
 
@@ -136,7 +136,7 @@
         android:layout_width="151dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="매운닭갈비덮밥"
+        android:text="매운닭갈비덮밥\n6500원"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/manguntext2" />
 
@@ -145,7 +145,7 @@
         android:layout_width="151dp"
         android:layout_height="48dp"
         android:layout_marginStart="20dp"
-        android:text="두루치기덮밥"
+        android:text="두루치기덮밥\n5900원"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/manguntext1" />
 
@@ -164,7 +164,7 @@
         android:layout_width="151dp"
         android:layout_height="51dp"
         android:layout_marginStart="20dp"
-        android:text="양념목살덮밥"
+        android:text="양념목살덮밥\n5500원"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/manguntext" />
 
@@ -173,7 +173,7 @@
         android:layout_width="151dp"
         android:layout_height="51dp"
         android:layout_marginStart="28dp"
-        android:text="해물순두부찌개"
+        android:text="해물순두부찌개\n6500원"
         app:layout_constraintStart_toEndOf="@+id/manguntext1"
         app:layout_constraintTop_toBottomOf="@+id/manguntext" />
 

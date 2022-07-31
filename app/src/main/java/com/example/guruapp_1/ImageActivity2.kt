@@ -12,19 +12,12 @@ class ImageActivity2 : AppCompatActivity() {
         setContentView(R.layout.activity_image2)
 
         val imgFile1 = File("/data/user/0/com.example.guruapp_1/cache/" + DormitoryCafeteria().dormitoryImgName1)
-        val imgFile2 = File("/data/user/0/com.example.guruapp_1/cache/" + DormitoryCafeteria().dormitoryImgName2)
-        val imgFile3 = File("/data/user/0/com.example.guruapp_1/cache/" + DormitoryCafeteria().dormitoryImgName3)
 
         val path1 = BitmapFactory.decodeFile(imgFile1.getAbsolutePath())
-        val path2 = BitmapFactory.decodeFile(imgFile2.getAbsolutePath())
-        val path3 = BitmapFactory.decodeFile(imgFile3.getAbsolutePath())
-
-
 
         val img = when(intent.getIntExtra("pos", 1)) { // intent로 넘어온 pos값을 사용하여 보여줄 Image를 지정
             1 -> path1
-            2 -> path2
-            else -> path3
+            else -> path1
         }
         image_full.setImageBitmap(img)
 
