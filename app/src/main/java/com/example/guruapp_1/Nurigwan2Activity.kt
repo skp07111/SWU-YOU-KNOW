@@ -1,19 +1,74 @@
 package com.example.guruapp_1
 
 import android.content.Intent
+import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_library.*
 import kotlinx.android.synthetic.main.activity_nurigwan2.*
 
 // 학생누리관 - 학교공간
 class Nurigwan2Activity : AppCompatActivity() {
+
+    var nuri1: String = "nuri1"
+    var nuri2: String = "nuri2"
+    var nuri3: String = "nuri3"
+    var nuri4: String = "nuri4"
+    var nuri5: String = "nuri5"
+    var resetNum: Int = 3
+    lateinit var myHelper: myDBHelper
+    lateinit var sqlDB: SQLiteDatabase
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nurigwan2)
+
+        myHelper = myDBHelper(this, "guruDB", null, 1)
+
+        // DB 조회
+        sqlDB = myHelper.readableDatabase
+        var cursor: Cursor
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + nuri1 + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) nuri2_button1.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) nuri2_button1.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) nuri2_button1.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + nuri2 + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) nuri2_button2.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) nuri2_button2.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) nuri2_button2.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + nuri3 + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) nuri2_button3.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) nuri2_button3.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) nuri2_button3.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + nuri4 + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) nuri2_button4.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) nuri2_button4.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) nuri2_button4.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + nuri5 + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) nuri2_button5.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) nuri2_button5.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) nuri2_button5.setBackgroundResource(R.drawable.button_background3)
+        }
 
         // 혼잡도 버튼 활성화(long click)
         registerForContextMenu(nuri2_button1) // 5층 로비 버튼
@@ -65,21 +120,96 @@ class Nurigwan2Activity : AppCompatActivity() {
     // 여유(select3_) 선택 시 -> 초록색 배경(button_background3)
     override fun onContextItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
-            R.id.select1_nuri_1 -> nuri2_button1.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_nuri_1 -> nuri2_button1.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_nuri_1 -> nuri2_button1.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_nuri_2 -> nuri2_button2.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_nuri_2 -> nuri2_button2.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_nuri_2 -> nuri2_button2.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_nuri_3 -> nuri2_button3.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_nuri_3 -> nuri2_button3.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_nuri_3 -> nuri2_button3.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_nuri_4 -> nuri2_button4.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_nuri_4 -> nuri2_button4.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_nuri_4 -> nuri2_button4.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_nuri_5 -> nuri2_button5.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_nuri_5 -> nuri2_button5.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_nuri_5 -> nuri2_button5.setBackgroundResource(R.drawable.button_background3)
+            R.id.select1_nuri_1 -> {
+                nuri2_button1.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + nuri1 + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_nuri_1 -> {
+                nuri2_button1.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + nuri1 + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_nuri_1 -> {
+                nuri2_button1.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + nuri1 + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_nuri_2 -> {
+                nuri2_button2.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + nuri2 + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_nuri_2 -> {
+                nuri2_button2.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + nuri2 + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_nuri_2 -> {
+                nuri2_button2.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + nuri2 + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_nuri_3 -> {
+                nuri2_button3.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + nuri3 + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_nuri_3 -> {
+                nuri2_button3.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + nuri3 + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_nuri_3 -> {
+                nuri2_button3.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + nuri3 + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_nuri_4 -> {
+                nuri2_button4.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + nuri4 + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_nuri_4 -> {
+                nuri2_button4.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + nuri4 + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_nuri_4 -> {
+                nuri2_button4.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + nuri4 + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_nuri_5 -> {
+                nuri2_button5.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + nuri5 + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_nuri_5 -> {
+                nuri2_button5.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + nuri5 + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_nuri_5 -> {
+                nuri2_button5.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + nuri5 + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
         }
         return super.onContextItemSelected(item)
     }

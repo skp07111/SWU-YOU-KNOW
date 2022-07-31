@@ -1,6 +1,8 @@
 package com.example.guruapp_1
 
 import android.content.Intent
+import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
 import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,14 +10,43 @@ import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_library.*
 import kotlinx.android.synthetic.main.activity_shalom.*
 import java.util.*
 
 // 샬롬하우스 - 교내상점
 class ShalomActivity : AppCompatActivity() {
+
+    var dorm: String = "dorm"
+    var seven: String = "seven"
+    var resetNum: Int = 3
+    lateinit var myHelper: myDBHelper
+    lateinit var sqlDB: SQLiteDatabase
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shalom)
+
+        myHelper = myDBHelper(this, "guruDB", null, 1)
+
+        // DB 조회
+        sqlDB = myHelper.readableDatabase
+        var cursor: Cursor
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + dorm + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) shalom_button1.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) shalom_button1.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) shalom_button1.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + seven + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) shalom_button2.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) shalom_button2.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) shalom_button2.setBackgroundResource(R.drawable.button_background3)
+        }
 
         disabledCafeteria() // 기숙사식당 버튼(long click) 활성화/비활성화 함수
         disabledSeven() // 세븐일레븐 버튼(long click) 활성화/비활성화 함수
@@ -104,12 +135,42 @@ class ShalomActivity : AppCompatActivity() {
     // 여유(select3_) 선택 시 -> 초록색 배경(button_background3)
     override fun onContextItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
-            R.id.select1_dorm -> shalom_button1.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_dorm -> shalom_button1.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_dorm -> shalom_button1.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_seven -> shalom_button2.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_seven -> shalom_button2.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_seven -> shalom_button2.setBackgroundResource(R.drawable.button_background3)
+            R.id.select1_dorm -> {
+                shalom_button1.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + dorm + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_dorm -> {
+                shalom_button1.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + dorm + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_dorm -> {
+                shalom_button1.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + dorm + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_seven -> {
+                shalom_button2.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + seven + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_seven -> {
+                shalom_button2.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + seven + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_seven -> {
+                shalom_button2.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + seven + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
         }
         return super.onContextItemSelected(item)
     }

@@ -1,6 +1,8 @@
 package com.example.guruapp_1
 
 import android.content.Intent
+import android.database.Cursor
+import android.database.sqlite.SQLiteDatabase
 import android.icu.util.Calendar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,11 +11,23 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_anniversary50th.*
+import kotlinx.android.synthetic.main.activity_library.*
 import java.util.*
 
 // 50주년 기념관 - 교내상점
 class Anniversary50thActivity : AppCompatActivity() {
+
+    var staff: String = "staff"
+    var tous: String = "tous"
+    var onigiri: String = "onigiri"
+    var gamtan: String = "gamtan"
+    var cu: String = "cu"
+    var copyworks: String = "copyworks"
+    var resetNum: Int = 3
+    lateinit var myHelper: myDBHelper
+    lateinit var sqlDB: SQLiteDatabase
 
     lateinit var onigiriMenu: Button
     lateinit var gamtanMenu: Button
@@ -21,6 +35,54 @@ class Anniversary50thActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_anniversary50th)
+
+        myHelper = myDBHelper(this, "guruDB", null, 1)
+
+        // DB 조회
+        sqlDB = myHelper.readableDatabase
+        var cursor: Cursor
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + staff + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) fifty_button1.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) fifty_button1.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) fifty_button1.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + tous + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) fifty_button2.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) fifty_button2.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) fifty_button2.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + onigiri + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) fifty_button3.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) fifty_button3.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) fifty_button3.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + gamtan + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) fifty_button4.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) fifty_button4.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) fifty_button4.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + cu + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) fifty_button5.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) fifty_button5.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) fifty_button5.setBackgroundResource(R.drawable.button_background3)
+        }
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + copyworks + "';",null)
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) fifty_button6.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) fifty_button6.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) fifty_button6.setBackgroundResource(R.drawable.button_background3)
+        }
 
         // 오니기리와이규동 버튼
         onigiriMenu = findViewById<Button>(R.id.fifty_button3)
@@ -261,24 +323,114 @@ class Anniversary50thActivity : AppCompatActivity() {
     // 여유(select3_) 선택 시 -> 초록색 배경(button_background3)
     override fun onContextItemSelected(item: MenuItem): Boolean {
         when (item?.itemId) {
-            R.id.select1_staff -> fifty_button1.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_staff -> fifty_button1.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_staff -> fifty_button1.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_touslesjours -> fifty_button2.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_touslesjours -> fifty_button2.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_touslesjours -> fifty_button2.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_onigiri -> fifty_button3.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_onigiri -> fifty_button3.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_onigiri -> fifty_button3.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_gamtan -> fifty_button4.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_gamtan-> fifty_button4.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_gamtan -> fifty_button4.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_cu -> fifty_button5.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_cu -> fifty_button5.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_cu -> fifty_button5.setBackgroundResource(R.drawable.button_background3)
-            R.id.select1_copyworks -> fifty_button6.setBackgroundResource(R.drawable.button_background1)
-            R.id.select2_copyworks -> fifty_button6.setBackgroundResource(R.drawable.button_background2)
-            R.id.select3_copyworks -> fifty_button6.setBackgroundResource(R.drawable.button_background3)
+            R.id.select1_staff -> {
+                fifty_button1.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + staff + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_staff -> {
+                fifty_button1.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + staff + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_staff -> {
+                fifty_button1.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + staff + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_touslesjours -> {
+                fifty_button2.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + tous + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_touslesjours -> {
+                fifty_button2.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + tous + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_touslesjours -> {
+                fifty_button2.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + tous + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_onigiri -> {
+                fifty_button3.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + onigiri + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_onigiri -> {
+                fifty_button3.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + onigiri + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_onigiri -> {
+                fifty_button3.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + onigiri + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_gamtan -> {
+                fifty_button4.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + gamtan + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_gamtan-> {
+                fifty_button4.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + gamtan + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_gamtan -> {
+                fifty_button4.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + gamtan + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_cu -> {
+                fifty_button5.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + cu + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_cu -> {
+                fifty_button5.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + cu + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_cu -> {
+                fifty_button5.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + cu + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select1_copyworks -> {
+                fifty_button6.setBackgroundResource(R.drawable.button_background1)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 1 + " WHERE gName = '" + copyworks + "';")
+                Toast.makeText(applicationContext, "혼잡", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select2_copyworks -> {
+                fifty_button6.setBackgroundResource(R.drawable.button_background2)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 2 + " WHERE gName = '" + copyworks + "';")
+                Toast.makeText(applicationContext, "보통", Toast.LENGTH_SHORT).show()
+            }
+            R.id.select3_copyworks -> {
+                fifty_button6.setBackgroundResource(R.drawable.button_background3)
+                sqlDB = myHelper.writableDatabase
+                sqlDB.execSQL("UPDATE guruTBL SET gNumber = " + 3 + " WHERE gName = '" + copyworks + "';")
+                Toast.makeText(applicationContext, "여유", Toast.LENGTH_SHORT).show()
+            }
         }
         return super.onContextItemSelected(item)
     }
