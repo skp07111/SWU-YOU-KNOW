@@ -36,19 +36,32 @@ class LibraryCafeActivity : AppCompatActivity() {
 
         myHelper = myDBHelper(this)
 
+        sqlDB = myHelper.readableDatabase
+        var cursor: Cursor
+        cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + grazie + "';",null)
+
+        if (cursor.moveToNext()) {
+            resetNum = cursor.getInt((cursor.getColumnIndex("gNumber")))
+            if (resetNum == 1) libcafe_button1.setBackgroundResource(R.drawable.button_background1)
+            else if (resetNum == 2) libcafe_button1.setBackgroundResource(R.drawable.button_background2)
+            else if (resetNum == 3) libcafe_button1.setBackgroundResource(R.drawable.button_background3)
+        }
+
         // 북카페 그라찌에 버튼(short click) 선택 시 북카페 그라찌에 메뉴(GrazieActivity)로 전환
         grazieMenu.setOnClickListener() {
-//            sqlDB = myHelper.writableDatabase
-//            sqlDB.execSQL("DELETE FROM guruTBL WHERE gName = '" + grazie + "';")
-//            Toast.makeText(applicationContext, "삭제됨", Toast.LENGTH_SHORT).show()
-//            sqlDB.execSQL("INSERT INTO guruTBL VALUES ( '" + grazie + "' , " + resetNum + ");")
-//            Toast.makeText(applicationContext, "입력됨", Toast.LENGTH_SHORT).show()
-            var intent = Intent(this, GrazieActivity::class.java)
-            startActivity(intent)
+            sqlDB = myHelper.writableDatabase
+            sqlDB.execSQL("DELETE FROM guruTBL WHERE gName = '" + grazie + "';")
+            Toast.makeText(applicationContext, "삭제됨", Toast.LENGTH_SHORT).show()
+            sqlDB.execSQL("INSERT INTO guruTBL VALUES ( '" + grazie + "' , " + resetNum + ");")
+            Toast.makeText(applicationContext, "입력됨", Toast.LENGTH_SHORT).show()
+//            var intent = Intent(this, GrazieActivity::class.java)
+//            startActivity(intent)
 
         }
 
         disabledGrazie() // 북카페 그라찌에 버튼(long click) 활성화/비활성화 함수
+
+//        setBtnColor()
     }
 
        // 북카페 그라찌에 운영시간 8:30 - 18:30
@@ -123,20 +136,20 @@ class LibraryCafeActivity : AppCompatActivity() {
             return super.onContextItemSelected(item)
         }
 
-        private fun setBtnColor() {
-            var resetNum: Int = 3
-            myHelper = myDBHelper(this)
-            sqlDB = myHelper.readableDatabase
-            var cursor: Cursor
-            cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + grazie + "';",null)
-
-            if (cursor.moveToNext()) {
-                resetNum = cursor.getInt(1)
-                if (resetNum == 1) libcafe_button1.setBackgroundResource(R.drawable.button_background1)
-                else if (resetNum == 2) libcafe_button1.setBackgroundResource(R.drawable.button_background2)
-                else if (resetNum == 3) libcafe_button1.setBackgroundResource(R.drawable.button_background3)
-            }
-        }
+//        private fun setBtnColor() {
+//            var resetNum: Int = 3
+//            myHelper = myDBHelper(this)
+//            sqlDB = myHelper.readableDatabase
+//            var cursor: Cursor
+//            cursor = sqlDB.rawQuery("SELECT * FROM guruTBL WHERE gName = '" + grazie + "';",null)
+//
+//            if (cursor.moveToNext()) {
+//                resetNum = cursor.getInt((cursor.getColumnIndex("grazie")))
+//                if (resetNum == 1) libcafe_button1.setBackgroundResource(R.drawable.button_background1)
+//                else if (resetNum == 2) libcafe_button1.setBackgroundResource(R.drawable.button_background2)
+//                else if (resetNum == 3) libcafe_button1.setBackgroundResource(R.drawable.button_background3)
+//            }
+//        }
 
         inner class myDBHelper(context: Context) : SQLiteOpenHelper(context, "guruDB", null, 1) {
             override fun onCreate(db: SQLiteDatabase?) {
