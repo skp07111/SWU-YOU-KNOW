@@ -4,6 +4,7 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
+// DB 클래스
 class myDBHelper(
     context: Context?,
     name: String?,

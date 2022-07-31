@@ -1,5 +1,6 @@
 package com.example.guruapp_1
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
@@ -25,6 +26,7 @@ class Nurigwan2Activity : AppCompatActivity() {
     lateinit var myHelper: myDBHelper
     lateinit var sqlDB: SQLiteDatabase
 
+    @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_nurigwan2)

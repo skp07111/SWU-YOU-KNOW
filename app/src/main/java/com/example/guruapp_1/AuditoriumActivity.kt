@@ -1,5 +1,6 @@
 package com.example.guruapp_1
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.database.Cursor
 import android.database.sqlite.SQLiteDatabase
@@ -29,6 +30,7 @@ class AuditoriumActivity : AppCompatActivity() {
 
     lateinit var pandorothyMenu: Button
 
+    @SuppressLint("Range")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_auditorium)
