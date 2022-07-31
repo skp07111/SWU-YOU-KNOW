@@ -10,6 +10,7 @@
         android:layout_width="110dp"
         android:layout_height="30dp"
         android:layout_marginStart="140dp"
+        android:layout_marginTop="10dp"
         android:text="바나나우유 : 3.0"
         app:layout_constraintStart_toEndOf="@+id/bcoffee1"
         app:layout_constraintTop_toBottomOf="@+id/bettle_hj" />
@@ -173,6 +174,7 @@
         android:layout_height="35dp"
         android:layout_marginStart="3dp"
         android:text="헤이즐넛 아메리카노\nHOT 2.2/ICE 2.4"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bcoffee1" />
 
