@@ -20,19 +20,24 @@
             android:exported="false" />
         <activity
             android:name=".ImageActivity2"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".DormitoryCafeteria" />
         <activity
             android:name=".ImageActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".StaffCafeteria" />
         <activity
             android:name=".DormitoryCafeteria"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".CafeteriaActivity" />
         <activity
             android:name=".StaffCafeteria"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".CafeteriaActivity" />
         <activity
             android:name=".CafeteriaActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".EtangActivity"
             android:exported="false"
