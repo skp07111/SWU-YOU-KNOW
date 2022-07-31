@@ -103,6 +103,7 @@
         android:layout_height="50dp"
         android:layout_marginStart="136dp"
         android:text="이색과일(아보카도,오디,복분자,무화과,블루베리)\n4.5"
+        android:textSize="10.5sp"
         app:layout_constraintStart_toEndOf="@+id/bcoffee3"
         app:layout_constraintTop_toBottomOf="@+id/ffj11" />
 
