@@ -52,7 +52,7 @@ class ShalomActivity : AppCompatActivity() {
         }
 
         // 기숙사식당 버튼
-        shalomMenu = findViewById<Button>(R.id.fifty_button1)
+        shalomMenu = findViewById<Button>(R.id.shalom_button1)
 
         // 기숙사식당 버튼(short click) 선택 시 기숙사 식당 액티비티(DormitoryCafeteria)로 전환
         shalomMenu.setOnClickListener() {
