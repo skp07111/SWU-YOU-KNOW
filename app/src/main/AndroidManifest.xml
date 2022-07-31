@@ -21,9 +21,6 @@
             android:name=".BeetlejuiceActivity"
             android:exported="false" />
         <activity
-            android:name=".GPSMainActivity"
-            android:exported="false" />
-        <activity
             android:name=".MapQnaActivity"
             android:exported="false" />
         <activity
