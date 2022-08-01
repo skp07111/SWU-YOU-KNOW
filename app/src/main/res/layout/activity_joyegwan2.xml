@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/joye"
     tools:context=".JoyegwanActivity">
 
     <!-- 조형예술관 학교공간 정보 -->

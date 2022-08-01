@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/kidok"
     tools:context=".InsagwanActivity">
 
     <!-- 기독교교육관 학교공간 정보 -->

@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/shalom"
     tools:context=".ShalomActivity">
 
     <!-- 샬롬하우스 교내상점 정보 -->

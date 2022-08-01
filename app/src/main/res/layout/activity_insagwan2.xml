@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".InsagwanActivity">
+    android:background="@drawable/insa"
+    tools:context=".InsagwanActivity" >
 
     <!-- 인사관 학교공간 정보 -->
     <TextView

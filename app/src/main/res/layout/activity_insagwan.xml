@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/insa"
     tools:context=".InsagwanActivity">
 
     <!-- 인사관 교내상점 정보 -->

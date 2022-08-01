@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/sci2"
     tools:context=".InsagwanActivity">
 
     <!-- 제2과학관 학교공간 정보 -->

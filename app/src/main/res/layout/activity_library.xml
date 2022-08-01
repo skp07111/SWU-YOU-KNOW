@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/lib"
     tools:context=".LibraryCafeActivity">
 
     <!-- 중앙도서관 학교공간 정보 -->
