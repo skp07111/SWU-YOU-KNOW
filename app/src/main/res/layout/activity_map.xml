@@ -5,10 +5,7 @@
     android:layout_height="match_parent"
     android:background="#799E58">
 
-    // 교내상점 메뉴 캠퍼스 맵 배경
-
-    // 50주년 기념관
-
+<!--    교내상점 메뉴 캠퍼스 맵 배경-->
     <ImageView
         android:id="@+id/imageViewCampus"
         android:layout_width="wrap_content"
@@ -20,6 +17,7 @@
         android:layout_weight="1"
         app:srcCompat="@drawable/minimap_campus" />
 
+<!--    50주년 기념관-->
     <ImageButton
         android:id="@+id/imageButton50"
         android:layout_width="wrap_content"
@@ -49,7 +47,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 기독교교육관
+<!--    기독교교육관-->
     <ImageButton
         android:id="@+id/imageButtonKidok"
         android:layout_width="wrap_content"
@@ -63,7 +61,7 @@
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_kidok" />
+        app:srcCompat="@drawable/map_kidok_unclick" />
 
     <TextView
         android:id="@+id/textView_kidok"
@@ -75,13 +73,12 @@
         android:layout_marginBottom="187dp"
         android:fontFamily="@font/cafe24surround"
         android:text="기독교\n교육관"
-        android:textColor="@color/black"
+        android:textColor="@color/gray"
         android:textSize="10sp"
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 인문사회관
-
+<!--    인문사회관-->
     <ImageButton
         android:id="@+id/imageButtonInsa"
         android:layout_width="99dp"
@@ -111,8 +108,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 중앙도서관
-
+<!--    중앙도서관-->
     <ImageButton
         android:id="@+id/imageButtonLibrary"
         android:layout_width="81dp"
@@ -143,7 +139,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 학생누리관
+<!--    학생누리관-->
     <ImageButton
         android:id="@+id/imageButtonNuri"
         android:layout_width="76dp"
@@ -174,8 +170,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 조형예술관
-
+<!--    조형예술관-->
     <ImageButton
         android:id="@+id/imageButtonJoye"
         android:layout_width="wrap_content"
@@ -206,7 +201,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 제2과학관
+<!--    제2과학관-->
     <ImageButton
         android:id="@+id/imageButtonSci2"
         android:layout_width="wrap_content"
@@ -221,7 +216,7 @@
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_science2" />
+        app:srcCompat="@drawable/map_science2_unclick" />
 
     <TextView
         android:id="@+id/textView_science2"
@@ -233,12 +228,12 @@
         android:layout_marginBottom="400dp"
         android:fontFamily="@font/cafe24surround"
         android:text="제2\n과학관"
-        android:textColor="@color/black"
+        android:textColor="@color/gray"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 제1과학관
+<!--    제1과학관-->
     <ImageButton
         android:id="@+id/imageButtonSci1"
         android:layout_width="119dp"
@@ -255,7 +250,7 @@
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_science1" />
+        app:srcCompat="@drawable/map_science1_unclick" />
 
     <TextView
         android:id="@+id/textView_science1"
@@ -267,12 +262,12 @@
         android:layout_marginBottom="479dp"
         android:fontFamily="@font/cafe24surround"
         android:text="제1\n과학관"
-        android:textColor="@color/black"
+        android:textColor="@color/gray"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 샬롬기숙사
+<!--    샬롬기숙사-->
     <ImageButton
         android:id="@+id/imageButtonShalom"
         android:layout_width="140dp"
@@ -305,8 +300,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 국제생활관
-
+<!--    국제생활관-->
     <ImageButton
         android:id="@+id/imageButtonItn"
         android:layout_width="wrap_content"
@@ -323,7 +317,7 @@
         android:layout_weight="1"
         android:background="#00ffffff"
         android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_international" />
+        app:srcCompat="@drawable/map_international_unclick" />
 
     <TextView
         android:id="@+id/textView_Itn"
@@ -335,13 +329,12 @@
         android:layout_marginBottom="478dp"
         android:fontFamily="@font/cafe24surround"
         android:text="국제\n생활관"
-        android:textColor="@color/black"
+        android:textColor="@color/gray"
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent" />
 
 
-    // 대강당
-
+<!--    대강당-->
     <ImageButton
         android:id="@+id/imageButtonTgd"
         android:layout_width="123dp"
