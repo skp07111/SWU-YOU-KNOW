@@ -7,16 +7,19 @@
 
     // 교내상점 메뉴 캠퍼스 맵 배경
 
+    // 50주년 기념관
+
     <ImageView
         android:id="@+id/imageViewCampus"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="1dp"
         android:layout_weight="1"
         app:srcCompat="@drawable/minimap_campus" />
 
-    // 50주년 기념관
     <ImageButton
         android:id="@+id/imageButton50"
         android:layout_width="wrap_content"
@@ -28,9 +31,8 @@
         android:layout_marginEnd="254dp"
         android:layout_marginBottom="80dp"
         android:layout_weight="1"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_50" />
+        android:background="@drawable/button_clicked_50"
+        android:scaleType="fitStart" />
 
     <TextView
         android:id="@+id/textView_50"
@@ -79,6 +81,7 @@
 
 
     // 인문사회관
+
     <ImageButton
         android:id="@+id/imageButtonInsa"
         android:layout_width="99dp"
@@ -90,9 +93,8 @@
         android:layout_marginEnd="61dp"
         android:layout_marginBottom="202dp"
         android:layout_weight="1"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_insa" />
+        android:background="@drawable/button_clicked_insa"
+        android:scaleType="fitStart" />
 
     <TextView
         android:id="@+id/textView_insa"
@@ -110,21 +112,21 @@
 
 
     // 중앙도서관
+
     <ImageButton
         android:id="@+id/imageButtonLibrary"
-        android:layout_width="wrap_content"
-        android:layout_height="51dp"
+        android:layout_width="81dp"
+        android:layout_height="52dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
-        android:layout_marginStart="194dp"
-        android:layout_marginEnd="124dp"
-        android:layout_marginBottom="306dp"
+        android:layout_marginStart="195dp"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="305dp"
         android:layout_weight="1"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_library" />
+        android:background="@drawable/button_clicked_library"
+        android:scaleType="fitStart" />
 
     <TextView
         android:id="@+id/textView_library"
@@ -154,9 +156,8 @@
         android:layout_marginEnd="81dp"
         android:layout_marginBottom="343dp"
         android:layout_weight="1"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_nuri" />
+        android:background="@drawable/button_clicked_nuri"
+        android:scaleType="fitStart" />
 
     <TextView
         android:id="@+id/textView_nuri"
@@ -174,21 +175,21 @@
 
 
     // 조형예술관
+
     <ImageButton
         android:id="@+id/imageButtonJoye"
-        android:layout_width="78dp"
-        android:layout_height="82dp"
+        android:layout_width="wrap_content"
+        android:layout_height="79dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
         android:layout_marginStart="331dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="294dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="298dp"
         android:layout_weight="1"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_joye" />
+        android:background="@drawable/button_clicked_joye"
+        android:scaleType="fitStart" />
 
     <TextView
         android:id="@+id/textView_joye"
@@ -222,9 +223,6 @@
         android:scaleType="fitStart"
         app:srcCompat="@drawable/map_science2" />
 
-
-    // 제1과학관
-
     <TextView
         android:id="@+id/textView_science2"
         android:layout_width="wrap_content"
@@ -239,6 +237,8 @@
         android:textSize="13sp"
         app:layout_constraintStart_toStartOf="parent" />
 
+
+    // 제1과학관
     <ImageButton
         android:id="@+id/imageButtonSci1"
         android:layout_width="119dp"
@@ -287,9 +287,8 @@
         android:layout_marginEnd="156dp"
         android:layout_marginBottom="478dp"
         android:layout_weight="1"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_shalom" />
+        android:background="@drawable/button_clicked_shalom"
+        android:scaleType="fitStart" />
 
     <TextView
         android:id="@+id/textView_Shalom"
@@ -357,9 +356,8 @@
         android:layout_marginEnd="252dp"
         android:layout_marginBottom="278dp"
         android:layout_weight="1"
-        android:background="#00ffffff"
-        android:scaleType="fitStart"
-        app:srcCompat="@drawable/map_tgangdang" />
+        android:background="@drawable/button_clicked_tgd"
+        android:scaleType="fitStart" />
 
     <TextView
         android:id="@+id/textView_Tgd"

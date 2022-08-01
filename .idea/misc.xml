@@ -3,8 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/button_clicked_50.xml" value="0.19" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/button_clicked_insa.xml" value="0.19" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/button_clicked_joye.xml" value="0.19" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/button_clicked_library.xml" value="0.19" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/button_clicked_nuri.xml" value="0.19" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/button_clicked_shalom.xml" value="0.19" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/button_clicked_tgd.xml" value="0.19" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/drawable/ripple_effect.xml" value="0.1675" />
         <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_main.xml" value="0.4" />
-        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_map.xml" value="0.4" />
+        <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_map.xml" value="0.264" />
         <entry key="..\:/AndroidStudio_GURU/App/app/src/main/res/layout/activity_map2.xml" value="0.24871794871794872" />
         <entry key="..\:/Users/green/AndroidStudioProjects/App/app/src/main/res/layout/activity_anniversary50th.xml" value="0.25364583333333335" />
         <entry key="..\:/Users/green/AndroidStudioProjects/App/app/src/main/res/layout/activity_anniversary50th2.xml" value="0.25364583333333335" />

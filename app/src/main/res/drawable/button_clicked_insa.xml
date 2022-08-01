@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 버튼이 눌린 상태면 이미지 변경 -->
+    <item android:state_pressed="true" android:drawable="@drawable/map_insa_clicked" />
+
+    <!-- 기본 이미지 -->
+    <item android:drawable="@drawable/map_insa"/>
+</selector>
