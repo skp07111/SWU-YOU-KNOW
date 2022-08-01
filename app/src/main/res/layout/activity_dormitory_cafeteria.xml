@@ -8,6 +8,7 @@
     android:padding="40dp"
     tools:context=".DormitoryCafeteria">
 
+    <!-- 기숙사 식당 운영 시간 -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"

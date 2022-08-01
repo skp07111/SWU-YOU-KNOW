@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- 메인 메뉴 -->
     <ImageButton
         android:id="@+id/swu_spaces"
         android:layout_width="130dp"

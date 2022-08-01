@@ -8,6 +8,7 @@
     android:padding="40dp"
     tools:context=".StaffCafeteria">
 
+    <!-- 교직원 식당 정보 -->
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"

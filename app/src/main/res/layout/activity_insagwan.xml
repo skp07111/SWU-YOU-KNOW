@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".InsagwanActivity">
 
+    <!-- 인사관 교내상점 정보 -->
     <TextView
         android:id="@+id/insa_text1"
         android:layout_width="match_parent"

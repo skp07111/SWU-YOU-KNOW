@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".LibraryCafeActivity">
 
+    <!-- 중앙도서관 교내상점 정보 -->
     <TextView
         android:id="@+id/libcafe_text1"
         android:layout_width="match_parent"

@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".NurigwanActivity">
 
+    <!-- 학생누리관 학교공간 정보 -->
     <TextView
         android:id="@+id/nuri2_text1"
         android:layout_width="match_parent"

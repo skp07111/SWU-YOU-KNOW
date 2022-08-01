@@ -7,6 +7,7 @@
     android:background="@color/main_red"
     tools:context=".TitleActivity">
 
+    <!-- 메인 인트로 타이틀 -->
     <ImageView
         android:id="@+id/mainLogo"
         android:layout_width="250dp"

@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".VacationActivity">
 
+    <!-- 셔틀버스 방학 시간표 -->
     <TableLayout
 
         android:id="@+id/main_content"

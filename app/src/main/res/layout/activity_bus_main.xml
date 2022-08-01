@@ -5,6 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".ShuttleBusMainActivity">>
 
+<!-- 셔틀버스 메인 화면 표 -->
     <TableLayout
 
         android:orientation="vertical"

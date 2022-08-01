@@ -10,6 +10,7 @@
     android:layout_gravity="center"
     tools:context=".MapQnaActivity">
 
+    <!-- 이메일로 문의하기 -->
     <TextView
         android:id="@+id/btnemail"
         android:layout_width="178dp"
@@ -24,6 +25,7 @@
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"/>
 
+    <!-- 전화로 문의하기 -->
     <TextView
         android:id="@+id/btncall"
         android:layout_width="178dp"

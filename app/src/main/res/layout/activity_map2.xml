@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="#799E58">
 
-<!--    학교공간 메뉴 캠퍼스맵 배경-->
+    <!-- 학교공간 메뉴 캠퍼스맵 배경 -->
     <ImageView
         android:id="@+id/imageViewCampus_2"
         android:layout_width="wrap_content"
@@ -15,7 +15,7 @@
         android:layout_weight="1"
         app:srcCompat="@drawable/minimap_campus" />
 
-<!--    50주년 기념관-->
+    <!-- 50주년 기념관 -->
     <ImageButton
         android:id="@+id/imageButton50_2"
         android:layout_width="wrap_content"
@@ -45,7 +45,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    기독교교육관-->
+    <!-- 기독교교육관 -->
     <ImageButton
         android:id="@+id/imageButtonKidok_2"
         android:layout_width="69dp"
@@ -75,7 +75,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    인문사회관-->
+    <!-- 인문사회관 -->
     <ImageButton
         android:id="@+id/imageButtonInsa_2"
         android:layout_width="100dp"
@@ -105,7 +105,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    중앙도서관-->
+    <!-- 중앙도서관 -->
     <ImageButton
         android:id="@+id/imageButtonLibrary_2"
         android:layout_width="wrap_content"
@@ -136,7 +136,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    학생누리관-->
+    <!-- 학생누리관 -->
     <ImageButton
         android:id="@+id/imageButtonNuri_2"
         android:layout_width="77dp"
@@ -167,7 +167,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    조형예술관-->
+    <!-- 조형예술관 -->
     <ImageButton
         android:id="@+id/imageButtonJoye_2"
         android:layout_width="wrap_content"
@@ -198,7 +198,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    제2과학관-->
+    <!-- 제2과학관 -->
     <ImageButton
         android:id="@+id/imageButtonSci2_2"
         android:layout_width="87dp"
@@ -229,7 +229,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    제1과학관-->
+    <!-- 제1과학관 -->
     <ImageButton
         android:id="@+id/imageButtonSci1_2"
         android:layout_width="117dp"
@@ -262,7 +262,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    샬롬기숙사-->
+    <!-- 샬롬기숙사 -->
     <ImageButton
         android:id="@+id/imageButtonShalom_2"
         android:layout_width="139dp"
@@ -296,7 +296,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    국제생활관-->
+    <!-- 국제생활관 -->
     <ImageButton
         android:id="@+id/imageButtonItn_2"
         android:layout_width="wrap_content"
@@ -330,7 +330,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
 
-<!--    대강당-->
+    <!-- 대강당 -->
     <ImageButton
         android:id="@+id/imageButtonTgd_2"
         android:layout_width="123dp"

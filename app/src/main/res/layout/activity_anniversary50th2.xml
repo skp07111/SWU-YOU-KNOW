@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".Anniversary50thActivity">
 
+<!-- 50주년 기념관 학교공간 정보 -->
     <TextView
         android:id="@+id/fifty2_text1"
         android:layout_width="match_parent"
@@ -18,6 +19,7 @@
         android:fontFamily="@font/scdream7"
         android:textSize="38sp"></TextView>
 
+<!-- 5층 -->
     <TextView
         android:id="@+id/fifty2_text2"
         android:layout_width="match_parent"
@@ -45,6 +47,7 @@
 
     </LinearLayout>
 
+<!-- 4층 -->
     <TextView
         android:id="@+id/fifty2_text3"
         android:layout_width="match_parent"
@@ -72,6 +75,7 @@
 
     </LinearLayout>
 
+<!-- 3층 -->
     <TextView
         android:id="@+id/fifty2_text4"
         android:layout_width="match_parent"

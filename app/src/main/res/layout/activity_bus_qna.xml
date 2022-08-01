@@ -10,6 +10,7 @@
     android:layout_gravity="center"
     tools:context=".QnaActivity">
 
+    <!-- 셔틀버스 문의사항 이메일 문의 -->
     <TextView
         android:id="@+id/btnemail"
         android:layout_width="178dp"
@@ -24,6 +25,7 @@
         android:focusable="true"
         android:foreground="?android:attr/selectableItemBackground"/>
 
+    <!-- 셔틀버스 문의사항 이메일 문의 -->
     <TextView
         android:id="@+id/btncall"
         android:layout_width="178dp"

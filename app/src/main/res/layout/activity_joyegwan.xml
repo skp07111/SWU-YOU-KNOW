@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".JoyegwanActivity">
 
+    <!-- 조형예술관 교내상점 정보 -->
     <TextView
         android:id="@+id/joye_text1"
         android:layout_width="match_parent"
